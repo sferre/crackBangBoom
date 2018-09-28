@@ -1,5 +1,6 @@
 body {
   background-image: url("../images/form-background.png");
+  background-size: cover;
 }
 
 .formularios{
