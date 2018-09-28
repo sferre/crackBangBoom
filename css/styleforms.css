@@ -1,12 +1,21 @@
 body {
-  background-image: url("../images/form-background.png");
-  background-size: cover;
+  background-image: url("../images/form-background3.png");
+  background-size: auto;
+  background-position: center top;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  max-width: 500px;
+  max-height: 667px;
+  border-radius: 50%;
+
 }
 
 .formularios{
   background-repeat: no-repeat;
-  background-position: center;
   font-family: 'Bangers', cursive;
+  justify-content: space-between
   box-sizing: border-box;
   padding: 15px;
   color: #000;
