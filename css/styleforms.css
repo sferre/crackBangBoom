@@ -1,0 +1,18 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Bangers', cursive;
+}
+
+.formularios{
+  background-image: url("../images/form-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Bangers', cursive;
+  box-sizing: border-box;
+  padding: 15px;
+
+
+
+}
