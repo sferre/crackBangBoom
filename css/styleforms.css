@@ -1,11 +1,12 @@
-.formularios{
+body {
   background-image: url("../images/form-background.png");
+}
+
+.formularios{
   background-repeat: no-repeat;
   background-position: center;
   font-family: 'Bangers', cursive;
   box-sizing: border-box;
   padding: 15px;
-
-
-
+  color: #000;
 }

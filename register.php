@@ -62,7 +62,6 @@ $_POST["NombreCompleto"]=trim(ucwords($_POST["NombreCompleto"]));
 <head>
 	<meta charset="utf-8">
 	<title>Nuevo Usuario</title>
-	<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
 	<link rel="stylesheet" href="css/main-style.css">
 	<link rel="stylesheet" href="css/styleforms.css">
 </head>
