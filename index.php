@@ -29,7 +29,7 @@
     <div class="container-fluid">
 
       <!--Sección de Novedades-->
-      <div class="row section">
+      <div class="row red section">
         <div class="name-section col-12">
           Novedades
         </div>
@@ -48,7 +48,7 @@
       </div>
 
       <!--Sección de Géneros-->
-      <div class="row section">
+      <div class="row blue section">
         <div class="name-section col-12">
           Generos
         </div>
@@ -67,10 +67,10 @@
       </div>
 
       <!--Sección de Doble-->
-      <div class="row section">
+      <div class="row section no-gap">
 
         <!--Lo más popular de Marvel-->
-        <div class="subsection col-12">
+        <div class="gray subsection col-12">
           <div class="group-a row">
             <div class="name-section col-12">
               Lo más popular de Marvel
@@ -91,7 +91,7 @@
         </div>
 
         <!--Lo más popular de DC-->
-        <div class="subsection col-12">
+        <div class="gray subsection col-12">
           <div class="group-b row">
             <div class="name-section col-12">
               Lo más popular de DC

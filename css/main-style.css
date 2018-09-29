@@ -13,7 +13,7 @@ h1, h2, h3 {
 }
 
 body {
-  background-color: #151515;
+  background-color: #ccc;
 }
 
 ul {
@@ -21,24 +21,24 @@ ul {
 }
 
 a {
-  color: #b35900;
+  color: #999;
 }
 
 a:hover {
   transition: color 0.5s;
-  color: #e67300;
+  color: #42A9E0;
   text-decoration: none;
 }
 
 p {
-  color: #7a7a7a;
+  color: #666;
 }
 
 .nav1 {
-  background-color: #222;
+  background-color: #f2f2f2;
   justify-content: space-between;
   padding: 20px 20px 14px 20px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #cccccc;
 }
 
 #nav-menu {
@@ -48,18 +48,17 @@ p {
 
 #nav-menu img {
   width: 100%;
-  transform: translateY(-2px);
+  transform: translateY(2px);
 }
 
 #nav-logo {
-  width: 50px;
+  width: 65px;
 }
 
 #nav-logo img {
   width: 100%;
   transform: translateY(-3px);
 }
-
 
 #nav-search {
   height: 20px;
@@ -68,32 +67,50 @@ p {
 
 #nav-search img {
   width: 100%;
-  transform: translateY(-2px);
+  transform: translateY(2px);
 }
 
 .nav2 {
-  background-color: #222;
+  background-color: #f2f2f2;
   display: flex;
   justify-content: space-around;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #999999;
 }
 
 .btn-nav {
   height: 50px;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
-  line-height: 50px;
+  line-height: 52px;
   padding: 0 5px 0 5px;
 }
 
 .banner {
   background-color: gray;
   height: 300px;
+  margin-bottom: 15px;
 }
 
 .section {
   padding-top: 10px;
-  background-color: #0d0d0d;
+  margin-bottom: 15px;
+}
+
+.no-gap {
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+.red {
+  background-color: #E52328;
+}
+
+.blue {
+  background-color: #42A9E0;
+}
+
+.gray {
+  background-color: #999999;
 }
 
 .name-section {
@@ -160,6 +177,14 @@ footer {
 
 .bottom-menu {
   margin-bottom: 10px;
+}
+
+.bottom-menu a {
+  color: #E52328;
+}
+
+.signature {
+  color: #666;
 }
 
 .bigger {

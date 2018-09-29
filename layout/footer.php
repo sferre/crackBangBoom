@@ -16,7 +16,7 @@
   </div>
 
   <div class="signature col-12">
-    © Los más grosos
+    © Grupo N°4
   </div>
 
 </footer>
