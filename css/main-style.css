@@ -114,11 +114,19 @@ p {
 }
 
 .name-section {
-  height: 50px;
   font-size: 18px;
   text-align: left;
   line-height: 50px;
   padding: 0 5px 0 15px;
+}
+
+.name-section h1 {
+  color: #fff;
+  font-size: 25px;
+}
+
+.subsection h1 {
+  padding-top: 10px;
 }
 
 .comic-section {
