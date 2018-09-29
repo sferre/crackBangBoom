@@ -8,7 +8,7 @@
       </a>
     </div>
     <div id="nav-logo" class="">
-      <a href="#">X</a>
+      <a href="#"><img src="images/icons/icon-cbb.svg" alt="CBB"></a>
     </div>
     <div id="nav-search" class="">
       <a href="#">
