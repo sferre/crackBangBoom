@@ -33,10 +33,9 @@ a:hover {
 p {
   color: #666;
 }
-
+/* ------------- Header ------------ */
 .nav1 {
   background-color: #f2f2f2;
-  justify-content: space-between;
   padding: 20px 20px 12px 20px;
   border-bottom: 1px solid #cccccc;
 }
@@ -49,7 +48,60 @@ p {
 #nav-menu img {
   width: 100%;
   transform: translateY(3px);
-}
+  }
+
+/* ----- BOTON (todavia no funciona)------ */
+.img-menu {
+  display: inline-block;
+  }
+
+#menu-check:checked ~ .navigation {
+    display: block;
+    top: 50px;
+    right: 0;
+  }
+
+  #menu-check{
+    display: none;
+  }
+
+  #menu-toggle{
+      float: right;
+      display: inline-block;
+    }
+
+/* NAV DEL BOTON */
+.navigation {
+    position: relative;
+    }
+
+.navigation-ul{
+    text-transform: uppercase;
+    position: absolute;
+    left: 1px;
+    top: -30px;
+    list-style-type: none;
+    background-color: rgba(24,24,24,.9);
+    width: 150px;
+    text-align:left;
+    display: none;
+      }
+
+  .navigation-ul li{
+     display: inline-block;
+     padding: 13px;
+     cursor: pointer;
+     font-weight: bold;
+     font-size: 15px;
+    }
+
+  .navigation-ul li:hover{
+      box-sizing: border-box;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #E52328;
+    }
+
+  /* ----------------- */
 
 #nav-logo {
   width: 65px;
@@ -73,16 +125,22 @@ p {
 .nav2 {
   background-color: #f2f2f2;
   display: flex;
-  justify-content: space-around;
   border-bottom: 1px solid #999999;
 }
 
 .btn-nav {
+  list-style-type: none;
   height: 50px;
-  font-size: 16px;
+  width: 100%;
+  font-size: 14px;
   text-transform: uppercase;
   line-height: 52px;
-  padding: 0 5px 0 5px;
+  padding: 0 4px 0 4px;
+}
+
+.btn-nav li{
+  display: inline;
+  text-align: center;
 }
 
 .banner {
@@ -179,6 +237,7 @@ footer {
 
 .socialmedia li{
   font-size: 26px;
+  padding: 20px;
   display: inline;
   padding: 0 10px 0 10px;
 }
@@ -197,4 +256,60 @@ footer {
 
 .bigger {
   width: 320px;
+}
+
+@media (min-width:768px) {
+
+
+/* --- NAV SECUNDARIO --- */
+  .btn-nav {
+    font-size: 18px;
+  }
+
+}
+
+@media (min-width:1024px) {
+  .menu{
+    display: none;
+  }
+
+  .nav1 {
+    height: 100px;
+  }
+
+  #nav-logo {
+    position: absolute;
+    left: 20px;
+    top: 13px;
+  }
+
+  #nav-logo img{
+    width: 130px;
+  }
+
+  .navigation-ul{
+      position: relative;
+      background: none;
+      display: inline-block;
+      left: -130px;
+      top: 18px;
+      width: 600px;
+      text-align:center;
+    }
+
+  .navigation-ul li {
+    display: inline;
+    padding: 9px;
+    font-size: 20px;
+  }
+
+  .navigation-ul li a {
+    color: #42A9E0;
+  }
+
+/* --- NAV SECUNDARIO --- */
+  .btn-nav {
+    font-size: 20px;
+  }
+
 }
