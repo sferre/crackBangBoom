@@ -88,8 +88,8 @@ p {
     width: 150px;
     text-align:left;
     display: none;
-}
 
+  }
 .navigation-ul li{
    display: inline-block;
    padding: 13px;
@@ -150,11 +150,6 @@ p {
   margin-bottom: 15px;
 }
 
-.no-gap {
-  padding-top: 0px;
-  margin-bottom: 0px;
-}
-
 .red {
   background-color: #E52328;
 }
@@ -179,10 +174,6 @@ p {
   font-size: 25px;
 }
 
-.subsection h1 {
-  padding-top: 10px;
-}
-
 .comic-section {
   height: auto;
   padding: 0;
@@ -190,35 +181,81 @@ p {
 
 .allitems {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   align-items: flex-start;
 }
 
-.item {
-  background-color: #3a3a3a;
-  width: 157px;
-  height: 157px;
-  padding: 5px 50px 5px 5px;
-  margin-bottom: 5px;
-  color: #fff;
+/* -------- SUBSECTION -------------- */
+.subsection{
+
+}
+.subsection h1 {
+  padding-top: 10px;
 }
 
-.title {
-  text-align: left;
-}
+.group-a {
 
-.descrip {
-  text-align: left;
-}
-
-.genre {
-  text-align: left;
 }
 
 .group-b {
   padding-top: 10px;
 }
+
+.no-gap {
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+/* -------- ITEM COMICS -------------- */
+.item {
+  /* background-color: #3a3a3a; */
+  width: 175px;
+  height: 340px;
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.cover {
+  background-color: pink;
+  width: 168px;
+  height: 255px;
+}
+
+.cover img{
+  width: 168px;
+  height: 255px;
+}
+
+.info {
+  /* background-color: rgba(24,24,24,.05); */
+  width: 168px;
+  height: 80px;
+}
+
+.info p {
+  margin: 0;
+  color: #fff;
+  }
+
+.title p {
+  font-weight: lighter;
+}
+
+.edition p {
+  font-size: 8px;
+
+}
+
+.price p {
+  font-size: 14px;
+  font-weight: bold;
+}
+/* ----------------------------- fin items */
+
+
 
 footer {
   padding: 10px 0 20px 0;
@@ -253,6 +290,9 @@ footer {
 .bigger {
   width: 320px;
 }
+
+
+
 
 @media (min-width:768px) {
 
@@ -334,5 +374,49 @@ footer {
     width: 1024px;
     margin: 0 auto;
   }
+
+/* -------- ITEM COMICS -------------- */
+  .item {
+    /* background-color: #3a3a3a; */
+    width: 225px;
+    height: 420px;
+    /* padding: 5px 5px 5px 5px;
+    margin-bottom: 5px; */
+  }
+
+  .cover {
+    background-color: pink;
+    width: 220px;
+    height: 319px;
+  }
+
+  .cover img{
+    width: 220px;
+    height: 319px;
+  }
+
+  .info {
+    /* background-color: rgba(24,24,24,.05); */
+    width: 220px;
+    height: 98px;
+  }
+
+  .info p {
+
+    }
+
+  .title p {
+
+  }
+
+  .edition p {
+    /* font-size: 8px; */
+
+  }
+
+  .price p {
+    /* font-size: 14px; */
+  }
+
 
 }

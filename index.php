@@ -44,7 +44,7 @@
               <?php include('layout/item-comic.php'); ?>
               <?php include('layout/item-comic.php'); ?>
               <?php include('layout/item-comic.php'); ?>
-              <?php include('layout/item-comic.php'); ?>
+
 
             </div>
           </div>
@@ -63,7 +63,7 @@
               <?php include('layout/item-comic.php'); ?>
               <?php include('layout/item-comic.php'); ?>
               <?php include('layout/item-comic.php'); ?>
-              <?php include('layout/item-comic.php'); ?>
+
 
             </div>
           </div>
@@ -73,7 +73,7 @@
         <div class="row section no-gap">
 
           <!--Lo más popular de Marvel-->
-          <div class="gray subsection col-12">
+          <div class="col-12 col-md-6 gray subsection ">
             <div class="group-a row">
               <div class="name-section col-12">
                 <h1>Lo más popular de Marvel</h1>
@@ -84,9 +84,7 @@
                   <!--LISTADO DE COMICS-->
                   <?php include('layout/item-comic.php'); ?>
                   <?php include('layout/item-comic.php'); ?>
-                  <?php include('layout/item-comic.php'); ?>
-                  <?php include('layout/item-comic.php'); ?>
-                  <?php include('layout/item-comic.php'); ?>
+
 
                 </div>
               </div>
@@ -94,7 +92,7 @@
           </div>
 
           <!--Lo más popular de DC-->
-          <div class="gray subsection col-12">
+          <div class="col-12 col-md-6 gray subsection">
             <div class="group-b row">
               <div class="name-section col-12">
                 <h1>Lo más popular de DC</h1>
@@ -105,9 +103,7 @@
                   <!--LISTADO DE COMICS-->
                   <?php include('layout/item-comic.php'); ?>
                   <?php include('layout/item-comic.php'); ?>
-                  <?php include('layout/item-comic.php'); ?>
-                  <?php include('layout/item-comic.php'); ?>
-                  <?php include('layout/item-comic.php'); ?>
+
 
                 </div>
               </div>
