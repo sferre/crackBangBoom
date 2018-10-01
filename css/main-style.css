@@ -38,6 +38,7 @@ p {
   background-color: #f2f2f2;
   padding: 20px 20px 12px 20px;
   border-bottom: 1px solid #cccccc;
+  display: flex;
   justify-content: space-between;
 }
 

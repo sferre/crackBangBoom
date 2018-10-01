@@ -1,6 +1,37 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
 .banner {
   height: 300px;
   margin-bottom: 15px;
   background-image: url("../images/patterns/pattern-1.svg");
   background-repeat: repeat;
+  padding: 15px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.welcome img {
+  width: 100%;
+  max-height: 250px;
+}
+
+.dots {
+  width: 100px;
+  margin: 0 auto;
+  align-self: flex-end;
+
+}
+
+.dots img {
+  width: 12px;
+  opacity: 0.5;
 }
