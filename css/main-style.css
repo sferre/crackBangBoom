@@ -361,7 +361,7 @@ footer {
 
   #nav-logo {
     position: relative;
-    transform: translateX(-12px);
+    transform: translate(-6px, 2px);
   }
 
   #nav-logo img{

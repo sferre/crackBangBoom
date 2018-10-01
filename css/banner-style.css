@@ -44,11 +44,39 @@
 }
 
 .dots img:hover {
-  transition: opacity 2s;
+  transition: opacity 1s;
   opacity: 0.7;
 }
 
+.arrow-right .arrow-left {
+  display: none;
+}
+
+@media (min-width:768px) {
+
+  .arrow-right {
+    opacity: 0.5;
+  }
+
+  .arrow-left {
+    opacity: 0.5;
+    transform:rotate(180deg);
+  }
+
+  .arrow-right:hover {
+    transition: opacity 1s;
+    opacity: 0.7;
+  }
+
+  .arrow-left:hover {
+    transition: opacity 1s;
+    opacity: 0.7;
+  }
+
+}
+
 @media (min-width:1024px) {
+
   .banner {
     height: 400px;
   }
