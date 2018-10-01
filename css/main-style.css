@@ -26,13 +26,14 @@ a {
 }
 
 a:hover {
-  color: #42A9E0;
+  color: #43aae0;
   text-decoration: none;
 }
 
 p {
   color: #666;
 }
+
 /* ------------- Header ------------ */
 
 .bg-nav {
@@ -55,7 +56,7 @@ p {
 #nav-menu img {
   width: 100%;
   transform: translateY(3px);
-  }
+}
 
 /* ----- BOTON (todavia no funciona)------ */
 .img-menu {
@@ -103,6 +104,7 @@ p {
 
 .navigation-ul a:hover{
     box-sizing: border-box;
+    color: #E52328;
     padding-bottom: 8px;
     border-bottom: 2px dotted #E52328;
 }
@@ -383,7 +385,7 @@ footer {
   }
 
   .navigation-ul li a {
-    color: #E52328;
+    color: #43aae0;
   }
 
   #nav-search {
