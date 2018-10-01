@@ -218,7 +218,7 @@ p {
 }
 
 .cover {
-  background-color: pink;
+  /* background-color: pink; */
   width: 168px;
   height: 255px;
 }
@@ -259,6 +259,7 @@ p {
 footer {
   padding: 10px 0 20px 0;
   text-align: center;
+  font-size: 15px;
 }
 
 .socialmedia ul{
@@ -374,7 +375,7 @@ footer {
     margin: 0 auto;
   }
 
-/* -------- ITEM COMICS -------------- */
+/* ------ ITEM COMICS ------- */
   .item {
     /* background-color: #3a3a3a; */
     width: 225px;
@@ -384,7 +385,6 @@ footer {
   }
 
   .cover {
-    background-color: pink;
     width: 220px;
     height: 319px;
   }
@@ -395,26 +395,15 @@ footer {
   }
 
   .info {
-    /* background-color: rgba(24,24,24,.05); */
     width: 220px;
     height: 98px;
   }
 
-  .info p {
-
-    }
-
-  .title p {
-
-  }
-
-  .edition p {
-    /* font-size: 8px; */
-
-  }
-
-  .price p {
-    /* font-size: 14px; */
+/* ------ FOOTER ------ */
+  footer {
+    padding: 10px 0 20px 0;
+    text-align: center;
+    font-size: 18px;
   }
 
 
