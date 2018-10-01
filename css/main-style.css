@@ -11,6 +11,7 @@
 h1, h2, h3 {
   font-family:'Bangers';
   text-shadow: 1px 1px #111111;
+  letter-spacing: 1px;
 }
 
 body {

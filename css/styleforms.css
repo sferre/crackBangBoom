@@ -14,7 +14,7 @@ body {
 .formularios{
   background-image: url("../images/patterns/pattern-2.svg");
   background-repeat: repeat;
-  font-family: 'Bangers', cursive;
+  font-family: 'Bangers';
   justify-content: space-between;
   box-sizing: border-box;
   padding: 20px;
@@ -38,6 +38,7 @@ body {
 .titulo{
   text-align: center;
   color: #E52328;
+  letter-spacing: 1px;
 }
 
 .error{

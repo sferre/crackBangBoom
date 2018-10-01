@@ -1,13 +1,8 @@
 <?php
 
 //Creamos las variables de los posibles errores
-$errorNombreCompleto = '';
 $errorUserName = '';
-$errorCountry ='';
-$errorEmail = '';
-$errorAvatar = '';
 $errorPassword = '';
-$errorPassword2 = '';
 
 //Creamos las variables de los valores temporales ante eventuales errores
 $tempUserName = '';
@@ -61,8 +56,7 @@ var_dump($_POST);
 
 <body class="formularios">
 	<form action="login.php" method="post" id="login">
-			<img class="logoform" src="images/icons/icon-cbb-02.svg" alt="logo" width="20%">
-		  <br>
+			<br>
 		<div class="form">
 			<h1 class="titulo">¡Loggeate!</h1>
 				<br>

@@ -123,8 +123,7 @@ $_POST["NombreCompleto"]=trim(ucwords($_POST["NombreCompleto"]));
 
 <body class="formularios">
 	<form action="register.php" method="post" id="register" enctype="multipart/form-data">
-			<img class="logoform" src="images/icons/icon-cbb-02.svg" alt="logo" width="20%">
-		  <br>
+			 <br>
 		<div class="form">
 			<h1 class="titulo">¡Sumate a nuestra Comunidad!</h1>
 				<br>
