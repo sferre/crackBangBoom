@@ -49,6 +49,6 @@
 
 </header>
 
-<div class="bg-nav">
+<header class="bg-nav">
   <div class="bg-nav-1"></div>
-</div>
+</header>
