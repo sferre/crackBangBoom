@@ -5,11 +5,11 @@
   </div>
 
   <div class="dots">
-    <img src="images/icons/dot.svg" alt="">
-    <img src="images/icons/dot.svg" alt="">
-    <img src="images/icons/dot.svg" alt="">
-    <img src="images/icons/dot.svg" alt="">
-    <img src="images/icons/dot.svg" alt="">
+    <a href="#"><img src="images/icons/dot.svg" alt=""></a>
+    <a href="#"><img src="images/icons/dot.svg" alt=""></a>
+    <a href="#"><img src="images/icons/dot.svg" alt=""></a>
+    <a href="#"><img src="images/icons/dot.svg" alt=""></a>
+    <a href="#"><img src="images/icons/dot.svg" alt=""></a>
   </div>
 
 </div>

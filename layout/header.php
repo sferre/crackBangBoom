@@ -1,6 +1,6 @@
 <header class="container-fluid">
 
-  <!--NAV PRINCIPAL-->
+<!--NAV PRINCIPAL-->
   <div class="row nav1">
 <!-- ***** icono menu ***** -->
     <div id="nav-menu" class="">
@@ -48,3 +48,7 @@
   </nav>
 
 </header>
+
+<div class="bg-nav">
+  <div class="bg-nav-1"></div>
+</div>
