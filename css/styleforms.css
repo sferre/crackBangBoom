@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/form-background3.png");
+  background-image: ;
   background-size: auto;
   background-position: center top;
   display: block;
@@ -17,6 +17,25 @@ body {
   font-family: 'Bangers', cursive;
   justify-content: space-between
   box-sizing: border-box;
-  padding: 15px;
+  padding: 20px;
   color: #000;
+  box-sizing: border-box;
+
+}
+
+button{
+  background-color: #421155;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+	border-radius: 5px;
+}
+
+button:hover{
+	background-color: #00796b;
+	color: white;
 }
