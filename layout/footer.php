@@ -12,7 +12,7 @@
   </div>
 
   <div class="bottom-menu col-12">
-    <a href="#">Sobre nosotros</a> | <a href="#">Ayuda</a> | <a href="#">Terminos</a> | <a href="#">Privacidad</a>
+    <a href="#">Sobre nosotros</a> | <a href="#">FAQs</a> | <a href="#">Contacto</a> | <a href="#">Ingresar</a>
   </div>
 
   <div class="signature col-12">
