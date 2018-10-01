@@ -13,102 +13,106 @@
 
   <body>
 
-    <!--HEADER-->
-    <?php include('layout/header.php'); ?>
+    <div id="desktop-container">
 
-    <!--BANNER-->
-    <div class="container-fluid ">
-      <div class="row banner">
-        <div class="col-12">
-          Banner
-        </div>
-      </div>
-    </div>
+      <!--HEADER-->
+      <?php include('layout/header.php'); ?>
 
-    <!--CONTENIDO-->
-    <div class="container-fluid">
-
-      <!--Sección de Novedades-->
-      <div class="row red section">
-        <div class="name-section col-12">
-          <h1>Novedades</h1>
-        </div>
-        <div class="col-12 comic-section">
-          <div class="allitems">
-
-            <!--LISTADO DE COMICS-->
-            <?php include('layout/item-comic.php'); ?>
-            <?php include('layout/item-comic.php'); ?>
-            <?php include('layout/item-comic.php'); ?>
-            <?php include('layout/item-comic.php'); ?>
-            <?php include('layout/item-comic.php'); ?>
-
+      <!--BANNER-->
+      <div class="container-fluid ">
+        <div class="row banner">
+          <div class="col-12">
+            Banner
           </div>
         </div>
       </div>
 
-      <!--Sección de Géneros-->
-      <div class="row blue section">
-        <div class="name-section col-12">
-          <h1>Generos</h1>
-        </div>
-        <div class="comic-section col-12">
-          <div class="allitems">
+      <!--CONTENIDO-->
+      <div class="container-fluid">
 
-            <!--LISTADO DE COMICS-->
-            <?php include('layout/item-comic.php'); ?>
-            <?php include('layout/item-comic.php'); ?>
-            <?php include('layout/item-comic.php'); ?>
-            <?php include('layout/item-comic.php'); ?>
-            <?php include('layout/item-comic.php'); ?>
-
+        <!--Sección de Novedades-->
+        <div class="row red section">
+          <div class="name-section col-12">
+            <h1>Novedades</h1>
           </div>
-        </div>
-      </div>
+          <div class="col-12 comic-section">
+            <div class="allitems">
 
-      <!--Sección de Doble-->
-      <div class="row section no-gap">
+              <!--LISTADO DE COMICS-->
+              <?php include('layout/item-comic.php'); ?>
+              <?php include('layout/item-comic.php'); ?>
+              <?php include('layout/item-comic.php'); ?>
+              <?php include('layout/item-comic.php'); ?>
+              <?php include('layout/item-comic.php'); ?>
 
-        <!--Lo más popular de Marvel-->
-        <div class="gray subsection col-12">
-          <div class="group-a row">
-            <div class="name-section col-12">
-              <h1>Lo más popular de Marvel</h1>
             </div>
-            <div class="comic-section col-12">
-              <div class="allitems">
+          </div>
+        </div>
 
-                <!--LISTADO DE COMICS-->
-                <?php include('layout/item-comic.php'); ?>
-                <?php include('layout/item-comic.php'); ?>
-                <?php include('layout/item-comic.php'); ?>
-                <?php include('layout/item-comic.php'); ?>
-                <?php include('layout/item-comic.php'); ?>
+        <!--Sección de Géneros-->
+        <div class="row blue section">
+          <div class="name-section col-12">
+            <h1>Generos</h1>
+          </div>
+          <div class="comic-section col-12">
+            <div class="allitems">
 
+              <!--LISTADO DE COMICS-->
+              <?php include('layout/item-comic.php'); ?>
+              <?php include('layout/item-comic.php'); ?>
+              <?php include('layout/item-comic.php'); ?>
+              <?php include('layout/item-comic.php'); ?>
+              <?php include('layout/item-comic.php'); ?>
+
+            </div>
+          </div>
+        </div>
+
+        <!--Sección de Doble-->
+        <div class="row section no-gap">
+
+          <!--Lo más popular de Marvel-->
+          <div class="gray subsection col-12">
+            <div class="group-a row">
+              <div class="name-section col-12">
+                <h1>Lo más popular de Marvel</h1>
+              </div>
+              <div class="comic-section col-12">
+                <div class="allitems">
+
+                  <!--LISTADO DE COMICS-->
+                  <?php include('layout/item-comic.php'); ?>
+                  <?php include('layout/item-comic.php'); ?>
+                  <?php include('layout/item-comic.php'); ?>
+                  <?php include('layout/item-comic.php'); ?>
+                  <?php include('layout/item-comic.php'); ?>
+
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!--Lo más popular de DC-->
-        <div class="gray subsection col-12">
-          <div class="group-b row">
-            <div class="name-section col-12">
-              <h1>Lo más popular de DC</h1>
-            </div>
-            <div class="comic-section col-12">
-              <div class="allitems">
+          <!--Lo más popular de DC-->
+          <div class="gray subsection col-12">
+            <div class="group-b row">
+              <div class="name-section col-12">
+                <h1>Lo más popular de DC</h1>
+              </div>
+              <div class="comic-section col-12">
+                <div class="allitems">
 
-                <!--LISTADO DE COMICS-->
-                <?php include('layout/item-comic.php'); ?>
-                <?php include('layout/item-comic.php'); ?>
-                <?php include('layout/item-comic.php'); ?>
-                <?php include('layout/item-comic.php'); ?>
-                <?php include('layout/item-comic.php'); ?>
+                  <!--LISTADO DE COMICS-->
+                  <?php include('layout/item-comic.php'); ?>
+                  <?php include('layout/item-comic.php'); ?>
+                  <?php include('layout/item-comic.php'); ?>
+                  <?php include('layout/item-comic.php'); ?>
+                  <?php include('layout/item-comic.php'); ?>
 
+                </div>
               </div>
             </div>
           </div>
+
         </div>
 
       </div>

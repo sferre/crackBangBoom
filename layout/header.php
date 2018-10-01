@@ -1,7 +1,7 @@
 <header class="container-fluid">
 
   <!--NAV PRINCIPAL-->
-  <div class="row justify-content-around nav1">
+  <div class="row nav1">
 <!-- ***** icono menu ***** -->
     <div id="nav-menu" class="">
       <div class="menu">
@@ -11,16 +11,6 @@
         <!-- ***** checkbox ***** -->
       <input type="checkbox" id="menu-check">
       </div>
-
-      <!-- ***** nav ***** -->
-      <nav class="navigation">
-        <ul class="navigation-ul">
-            <li><a href="#">Sobre Nosotros</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Ingresar</a></li>
-          </ul>
-        </nav>
     </div>
 
 
@@ -28,6 +18,17 @@
     <div id="nav-logo" class="">
       <a href="#"><img src="images/icons/icon-cbb-02.svg" alt="CBB"></a>
     </div>
+
+    <!-- ***** nav ***** -->
+    <nav class="navigation">
+      <ul class="navigation-ul">
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Ingresar</a></li>
+        </ul>
+    </nav>
+
 <!-- ***** lupa ***** -->
     <div id="nav-search" class="">
       <a href="#">

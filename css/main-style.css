@@ -13,7 +13,7 @@ h1, h2, h3 {
 }
 
 body {
-  background-color: #ccc;
+  background-color: #f2f2f2;
 }
 
 ul {
@@ -38,6 +38,7 @@ p {
   background-color: #f2f2f2;
   padding: 20px 20px 12px 20px;
   border-bottom: 1px solid #cccccc;
+  justify-content: space-between;
 }
 
 #nav-menu {
@@ -55,7 +56,8 @@ p {
   display: inline-block;
   }
 
-#menu-check:checked ~ .navigation {
+  #menu-check:checked ~ .navigation {
+    width: 100%;
     display: block;
     top: 50px;
     right: 0;
@@ -72,8 +74,8 @@ p {
 
 /* NAV DEL BOTON */
 .navigation {
-    position: relative;
-    }
+    position: absolute;
+}
 
 .navigation-ul{
     text-transform: uppercase;
@@ -85,23 +87,22 @@ p {
     width: 150px;
     text-align:left;
     display: none;
-      }
+}
 
-  .navigation-ul li{
-     display: inline-block;
-     padding: 13px;
-     cursor: pointer;
-     font-weight: bold;
-     font-size: 15px;
-    }
+.navigation-ul li{
+   display: inline-block;
+   padding: 13px;
+   cursor: pointer;
+   font-size: 15px;
+}
 
-  .navigation-ul li:hover{
-      box-sizing: border-box;
-      padding-bottom: 8px;
-      border-bottom: 2px solid #E52328;
-    }
+.navigation-ul li:hover{
+    box-sizing: border-box;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #E52328;
+}
 
-  /* ----------------- */
+/* ----------------- */
 
 #nav-logo {
   width: 65px;
@@ -261,9 +262,9 @@ footer {
 @media (min-width:768px) {
 
 
-/* --- NAV SECUNDARIO --- */
+  /* --- NAV SECUNDARIO --- */
   .btn-nav {
-    font-size: 18px;
+    font-size: 16px;
   }
 
 }
@@ -274,42 +275,69 @@ footer {
   }
 
   .nav1 {
-    height: 100px;
+    height: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #nav-menu {
+    width: 0;
+    position: absolute;
   }
 
   #nav-logo {
-    position: absolute;
-    left: 20px;
-    top: 13px;
+    position: relative;
+    transform: translateX(-12px);
   }
 
   #nav-logo img{
-    width: 130px;
+    width: 85px;
+  }
+
+  .navigation {
+    position: relative;
+    width: 600px;
   }
 
   .navigation-ul{
       position: relative;
+      position: absolute;
       background: none;
       display: inline-block;
-      left: -130px;
-      top: 18px;
-      width: 600px;
+      top: 13px;
+      width: 100%;
       text-align:center;
-    }
+  }
 
   .navigation-ul li {
     display: inline;
     padding: 9px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .navigation-ul li a {
-    color: #42A9E0;
+    color: #E52328;
   }
 
-/* --- NAV SECUNDARIO --- */
+  #nav-search {
+    width: 65px;
+    transform: translate(0px, 8px);
+    text-align: right;
+  }
+
+  #nav-search img {
+    width: 20px;
+  }
+
+  /* --- NAV SECUNDARIO --- */
   .btn-nav {
-    font-size: 20px;
+    font-size: 16px;
+  }
+
+  /* -- CONTENEDOR PARA PC -- */
+  #desktop-container {
+    width: 1024px;
+    margin: 0 auto;
   }
 
 }
