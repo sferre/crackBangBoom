@@ -116,25 +116,31 @@ $_POST["NombreCompleto"]=trim(ucwords($_POST["NombreCompleto"]));
 <head>
 	<meta charset="utf-8">
 	<title>Nuevo Usuario</title>
-	<link rel="stylesheet" href="cs/main-style.css">
-	<link rel="stylesheet" href="cs/styleforms.css">
+	<link rel="stylesheet" href="css/main-style.css">
+	<link rel="stylesheet" href="css/styleforms.css">
 </head>
 
 <body class="formularios">
 
 	<form action="register.php" method="post" id="register" enctype="multipart/form-data">
 		<h1>¡Sumate a nuestra Comunidad!</h1>
-
+<br>
+<br>
+<div>
 		<label>Nombre Completo
 			<input type="text" name="NombreCompleto" placeholder="Nombre y Apellido" autofocus value="<?php echo $tempNombreCompleto ?>">
 			<?php echo $errorNombreCompleto; ?>
 		</label>
-<br><br>
+</div>
+<br>
+<div>
 		<label>Nombre de Usuario
 			<input type="text" name="NombreUsuario" value="<?php echo $tempUserName ?>">
 			<?php echo $errorUserName; ?>
 		</label>
-<br><br>
+</div>
+<br>
+<div>
 		<label>País de Nacimiento
 			<input list="countries" name="PaisNacimiento" placeholder="Selecciona un País" value="<?php echo $tempCountry ?>">
       <datalist id="countries">
@@ -378,36 +384,46 @@ $_POST["NombreCompleto"]=trim(ucwords($_POST["NombreCompleto"]));
       </datalist>
       <?php echo $errorCountry; ?>
 		</label>
-<br><br>
+</div>
+<br>
+<div>
 		<label>E-Mail
 			<input ="email" name="Email" value="<?php echo $tempEmail ?>">
 			<?php echo $errorEmail; ?>
 		</label>
-<br><br>
+</div>
+<br>
+<div>
 		<label>Imagen de Perfil
 			<input type="file" name="Avatar" placeholder="Elegí una Imagen">
 			<?php echo $errorAvatar; ?>
 		</label>
-<br><br>
+</div>
+<br>
+<div>
 		<label>Constraseña
       <input type="password" name="Password" >
       <?php echo $errorPassword; ?>
     </lebel>
-<br><br>
+</div>
+<br>
+<div>
     <label>Repetir Constraseña
       <input type="password" name="Password2">
       <?php echo $errorPassword2; ?>
     </lebel>
-
-<br><br>
-
-		<button type="submit">
+</div>
+<br>
+<div>
+		<button type="submit" class:"button">
 			Registrarme!
 		</button>
+
     <button type="reset">
 			Volver a Empezar
 		</button>
+</div>
 
-	</form>
+</form>
 </body>
 </html>
