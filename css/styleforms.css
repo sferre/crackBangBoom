@@ -7,24 +7,59 @@ body {
   margin-right: auto;
   padding: 0;
   max-width: 500px;
-  max-height: 667px;
-  border-radius: 50%;
+
 
 }
 
 .formularios{
-  background-repeat: no-repeat;
+  background-image: url("../images/patterns/pattern2.svg");
+  background-repeat: repeat;
   font-family: 'Bangers', cursive;
-  justify-content: space-between
+  justify-content: space-between;
   box-sizing: border-box;
   padding: 20px;
   color: #000;
-  box-sizing: border-box;
+}
+
+.form {
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.logoform{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+.titulo{
+  text-align: center;
+  color: #E52328;
+}
+
+.error{
+  text-align:center;
+  color: #E52328;
+  font: Roboto;
 
 }
 
+input[type="text"], input[type="email"], input[type="password"], input[type="file"], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
 button{
-  background-color: #421155;
+  width: 49%;
+  background-color: #E52328;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -36,6 +71,6 @@ button{
 }
 
 button:hover{
-	background-color: #00796b;
+	background-color:#42A9E0;
 	color: white;
 }
