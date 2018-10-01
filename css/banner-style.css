@@ -35,3 +35,9 @@
   width: 12px;
   opacity: 0.5;
 }
+
+@media (min-width:1024px) {
+  .banner {
+    height: 400px;
+  }
+}

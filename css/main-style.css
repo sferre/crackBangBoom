@@ -10,6 +10,7 @@
 
 h1, h2, h3 {
   font-family:'Bangers';
+  text-shadow: 1px 1px #111111;
 }
 
 body {
@@ -161,8 +162,8 @@ p {
   background-color: #42A9E0;
 }
 
-.gray {
-  background-color: #999999;
+.yellow {
+  background-color: #ffd800;
 }
 
 .name-section {
@@ -170,6 +171,7 @@ p {
   text-align: left;
   line-height: 50px;
   padding: 0 5px 0 15px;
+  border-bottom: 1px dotted #333;
 }
 
 .name-section h1 {
@@ -203,6 +205,7 @@ p {
 
 .group-b {
   padding-top: 10px;
+  border-top: 4px solid #fff;
 }
 
 .no-gap {
@@ -300,6 +303,13 @@ footer {
 
 @media (min-width:768px) {
 
+  /* -- SECCION DOBLE -- */
+
+  .group-b {
+    padding-top: 0px;
+    border-top: 0px;
+    border-left: 4px solid #fff;
+  }
 
   /* --- NAV SECUNDARIO --- */
   .btn-nav {
@@ -396,6 +406,14 @@ footer {
     width: 1024px;
     margin: 0 auto;
   }
+
+  /* -- SECCION DOBLE -- */
+
+  .group-b {
+    padding-top: 0px;
+    border-left: 4px solid #fff;
+  }
+
 
 /* ------ ITEM COMICS ------- */
   .item {

@@ -73,7 +73,7 @@
         <div class="row section no-gap">
 
           <!--Lo más popular de Marvel-->
-          <div class="col-12 col-md-6 gray subsection ">
+          <div class="col-12 col-md-6 yellow subsection ">
             <div class="group-a row">
               <div class="name-section col-12">
                 <h1>Lo más popular de Marvel</h1>
@@ -92,7 +92,7 @@
           </div>
 
           <!--Lo más popular de DC-->
-          <div class="col-12 col-md-6 gray subsection">
+          <div class="col-12 col-md-6 yellow subsection">
             <div class="group-b row">
               <div class="name-section col-12">
                 <h1>Lo más popular de DC</h1>
