@@ -1,0 +1,6 @@
+.banner {
+  height: 300px;
+  margin-bottom: 15px;
+  background-image: url("../images/patterns/pattern-1.svg");
+  background-repeat: repeat;
+}

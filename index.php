@@ -9,6 +9,7 @@
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/banner-style.css">
   </head>
 
   <body>
@@ -22,7 +23,7 @@
       <div class="container-fluid ">
         <div class="row banner">
           <div class="col-12">
-            Banner
+            <?php include('layout/banner.php'); ?>
           </div>
         </div>
       </div>
