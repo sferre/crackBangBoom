@@ -69,18 +69,18 @@ var_dump($_POST);
 					<label>Nombre de Usuario:
 							<input type="text" name="NombreUsuario" value="<?php echo $tempUserName ?>">
 					</label>
-
+					<br>
 					<label class="erroresx"><?php echo $errorUserName; ?></label>
 
 
 
 					<label>Constraseña:
-					    <input class="inputsx" type="password" name="Password" >
+					    <input type="password" name="Password" >
 					</label>
 
+					<br>
 					<label class="erroresx"><?php echo $errorPassword; ?></label>
-
-
+					<br>
 
 					<button type="submit" class:"button">
 						Ingresar
