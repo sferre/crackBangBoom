@@ -89,7 +89,6 @@
                   <?php include('layout/item-comic-2.php'); ?>
                   <?php include('layout/item-comic-2.php'); ?>
 
-
                 </div>
               </div>
             </div>
