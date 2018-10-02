@@ -56,7 +56,7 @@
 
               <!--LISTADO DE COMICS-->
               <?php include('layout/item-comic-1.php'); ?>
-              
+
 
 
             </div>
