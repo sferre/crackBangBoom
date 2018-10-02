@@ -40,10 +40,10 @@
             <div class="allitems">
 
               <!--LISTADO DE COMICS-->
-              <?php include('layout/item-comic.php'); ?>
-              <?php include('layout/item-comic.php'); ?>
-              <?php include('layout/item-comic.php'); ?>
-              <?php include('layout/item-comic.php'); ?>
+              <?php include('layout/item-comic-1.php'); ?>
+              <?php include('layout/item-comic-1.php'); ?>
+              <?php include('layout/item-comic-1.php'); ?>
+              <?php include('layout/item-comic-1.php'); ?>
 
 
             </div>
@@ -59,10 +59,10 @@
             <div class="allitems">
 
               <!--LISTADO DE COMICS-->
-              <?php include('layout/item-comic.php'); ?>
-              <?php include('layout/item-comic.php'); ?>
-              <?php include('layout/item-comic.php'); ?>
-              <?php include('layout/item-comic.php'); ?>
+              <?php include('layout/item-comic-1.php'); ?>
+              <?php include('layout/item-comic-1.php'); ?>
+              <?php include('layout/item-comic-1.php'); ?>
+              <?php include('layout/item-comic-1.php'); ?>
 
 
             </div>
@@ -82,8 +82,8 @@
                 <div class="allitems">
 
                   <!--LISTADO DE COMICS-->
-                  <?php include('layout/item-comic.php'); ?>
-                  <?php include('layout/item-comic.php'); ?>
+                  <?php include('layout/item-comic-1.php'); ?>
+                  <?php include('layout/item-comic-1.php'); ?>
 
 
                 </div>
@@ -101,8 +101,8 @@
                 <div class="allitems">
 
                   <!--LISTADO DE COMICS-->
-                  <?php include('layout/item-comic.php'); ?>
-                  <?php include('layout/item-comic.php'); ?>
+                  <?php include('layout/item-comic-1.php'); ?>
+                  <?php include('layout/item-comic-1.php'); ?>
 
 
                 </div>
