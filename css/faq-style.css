@@ -1,0 +1,34 @@
+.faq-content {
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faq-content .titulosPrin {
+	background-color: yellow;
+	font-size: 18px;
+	text-align: center;	
+}
+
+.preguntas{
+	background: white;
+	margin-bottom: 1px;
+	padding: 10px 30px;
+	position: relative;
+	color: #595959;
+	border: 0;
+	display: block;
+	cursor: pointer;
+
+}
+
+@media (min-width:1024px) {
+
+  .faq-content {
+		margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+}

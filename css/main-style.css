@@ -15,10 +15,14 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3 {
+h1 {
   font-family:'Bangers';
   text-shadow: 1px 1px #111111;
   letter-spacing: 1px;
+}
+
+h2, h3 {
+  color: purple;
 }
 
 body {
