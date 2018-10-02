@@ -66,19 +66,18 @@ var_dump($_POST);
 	        </div>
 
 					<!--Datos del Formulario -->
-					<label>Nombre de Usuario:
+					<label>Nombre de Usuario:</label>
+						<br>
 							<input type="text" name="NombreUsuario" value="<?php echo $tempUserName ?>">
-					</label>
-					<br>
+						<br>
 					<label class="erroresx"><?php echo $errorUserName; ?></label>
-
-
-
-					<label>Constraseña:
-					    <input type="password" name="Password" >
-					</label>
-
 					<br>
+
+
+					<label>Constraseña:</label>
+						<br>
+					    <input type="password" name="Password" >
+						<br>
 					<label class="erroresx"><?php echo $errorPassword; ?></label>
 					<br>
 
