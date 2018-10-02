@@ -21,7 +21,7 @@
 
     <div class="container-fluid contact-principal">
     <!--Formulario -->
-      <form class="contact-form" action="Contacto.php" method="post">
+      <form class="contact-form" action="contact.php" method="post">
 
         <!--Titulo -->
         <div class="row-justify-content-center titulo-contact">
@@ -35,7 +35,7 @@
           <br>
         <label>E-Mail:</label>
           <br>
-            <input type="email" name="email" value="">
+            <input type="text" name="email" value="">
           <br>
         <label for=""> Asunto:</label>
           <br>
