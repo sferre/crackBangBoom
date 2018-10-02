@@ -17,6 +17,8 @@
 
 .nombre-usuario h1{
   text-align: center;
+  color: #42A9E0;
+  letter-spacing: 1px;
 }
 
 .edit-info-personal{
