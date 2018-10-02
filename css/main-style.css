@@ -75,7 +75,7 @@ header {
   transform: translateY(3px);
 }
 
-/* ----- BOTON (todavia no funciona)------ */
+/* ----- BOTON (funciona)------ */
 .img-menu {
   display: inline-block;
   }
@@ -83,8 +83,9 @@ header {
   #menu-check:checked ~ .navigation {
     width: 100%;
     display: block;
-    top: 50px;
+    top: 90px;
     right: 0;
+    z-index: 100;
   }
 
   #menu-check{
@@ -99,24 +100,28 @@ header {
 /* NAV DEL BOTON */
 .navigation {
     position: absolute;
-}
+    display: none;
+  }
 
 .navigation-ul{
     position: absolute;
     left: 1px;
     top: -30px;
     list-style-type: none;
-    background-color: rgba(24,24,24,.9);
+    background-color: rgba(242, 242, 242, 0.9);
     width: 150px;
     text-align:left;
-    display: none;
-
   }
+
 .navigation-ul li{
    display: inline-block;
    padding: 13px;
    cursor: pointer;
    font-size: 15px;
+}
+
+.navigation-ul li a {
+  color: #43aae0;
 }
 
 .navigation-ul a:hover{
@@ -334,6 +339,7 @@ footer {
   }
 
   .navigation {
+    display: block;
     position: relative;
     width: 600px;
   }

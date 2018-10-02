@@ -103,7 +103,8 @@ header {
     left: 1px;
     top: -30px;
     list-style-type: none;
-    background-color: rgba(24,24,24,.9);
+    background-color: rgba(229, 35, 40, .5);
+    /* rgba(24,24,24,.9) */
     width: 150px;
     text-align:left;
 
