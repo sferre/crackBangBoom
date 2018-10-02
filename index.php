@@ -82,15 +82,12 @@
                 <div class="allitems">
 
                   <!--LISTADO DE COMICS-->
-<<<<<<< HEAD
                   <?php include('layout/item-comic-2.php'); ?>
                   <?php include('layout/item-comic-2.php'); ?>
                   <?php include('layout/item-comic-2.php'); ?>
                   <?php include('layout/item-comic-2.php'); ?>
-=======
-                  <?php include('layout/item-comic-1.php'); ?>
-                  <?php include('layout/item-comic-1.php'); ?>
->>>>>>> master
+                  <?php include('layout/item-comic-2.php'); ?>
+                  <?php include('layout/item-comic-2.php'); ?>
 
 
                 </div>
@@ -108,16 +105,12 @@
                 <div class="allitems">
 
                   <!--LISTADO DE COMICS-->
-<<<<<<< HEAD
                   <?php include('layout/item-comic-2.php'); ?>
                   <?php include('layout/item-comic-2.php'); ?>
                   <?php include('layout/item-comic-2.php'); ?>
                   <?php include('layout/item-comic-2.php'); ?>
-=======
-                  <?php include('layout/item-comic-1.php'); ?>
-                  <?php include('layout/item-comic-1.php'); ?>
->>>>>>> master
-
+                  <?php include('layout/item-comic-2.php'); ?>
+                  <?php include('layout/item-comic-2.php'); ?>
 
                 </div>
               </div>
