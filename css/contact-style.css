@@ -61,6 +61,12 @@
 	color: white;
 }
 
+.error {
+  background-color: red;
+  color: white;
+  clear: left;
+}
+
 
 
 
@@ -72,7 +78,6 @@
   }
 
   .titulo-contact h1{
-    margin: 16px 0 0 10px;
     font-size: 50px;
   }
   .titulo-contact p{

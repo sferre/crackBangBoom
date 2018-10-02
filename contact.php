@@ -28,6 +28,7 @@
           <h1 clas="col-12">CONTACTO</h1>
           <p>Dejanos tus mensaje, duda o consulta despues de la señal... PIIIIP!</p>
         </div>
+
         <!--Datos del Formulario -->
         <label for=""> Nombre:</label>
           <br>

@@ -34,57 +34,76 @@ var_dump($_POST);
 ?>
 
 
-
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Crack Bang Boom! - Preguntas Frecuentes</title>
+    <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/contact-style.css">
+    <link rel="stylesheet" type="text/css" href="css/faq-style.css">
+  </head>
+  <body>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Login</title>
-	<link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/main-style.css">
-	<link rel="stylesheet" href="css/styleforms.css">
-</head>
+    <div id="desktop-container">
 
-<body class="formularios">
-	<div>
-		<?php include('layout/header.php'); ?>
-	</div>
-	<form class="container-fluid" action="login.php" method="post" id="login">
-			<br>
-		<div class="form">
-			<h1 class="titulo">¡Loggeate!</h1>
-				<br>
-			<div>
-					<label> Nombre de Usuario
-						<input type="text" name="NombreUsuario" value="<?php echo $tempUserName ?>">
+      <!--HEADER-->
+      <?php include('layout/header.php'); ?>
+
+    </div>
+
+    <div class="container-fluid contact-principal">
+
+			<form class="contact-form" action="login.php" method="post" id="login">
+
+					<!--Titulo -->
+	        <div class="row titulo-contact">
+	          <h1 class="col-12">¡Loggeate!</h1>
+	        </div>
+
+					<!--Datos del Formulario -->
+					<label>Nombre de Usuario:
+							<input type="text" name="NombreUsuario" value="<?php echo $tempUserName ?>">
 					</label>
-					<label class="error">	<?php echo $errorUserName; ?>
+
+					<label class="error"><?php echo $errorUserName; ?></label>
+
+
+
+					<label>Constraseña:
+					    <input class="inputsx" type="password" name="Password" >
 					</label>
-			</div>
-				<br>
-			<div>
-					<label>Constraseña
-			      <input class="inputsx" type="password" name="Password" >
-					</label>
-					<br>
-					<label class="error"> <?php echo $errorPassword; ?>
-			    </lebel>
-			</div>
-				<br>
-			<div>
+
+					<label class="error"><?php echo $errorPassword; ?></label>
+
+
+
 					<button type="submit" class:"button">
 						Ingresar
 					</button>
-			    <button type="reset">
+
+					<button type="reset">
 						Olvide Mi Constraseña
 					</button>
-			</div>
-		</div>
-	</form>
-	<div class="container-fluid">
-		<?php include('layout/footer.php'); ?>
-	</div>
-</body>
+
+
+			</form>
+
+    </div>
+
+
+    <div id="desktop-container">
+
+      <!--FOOTER-->
+      <div class="container-fluid">
+        <?php include('layout/footer.php'); ?>
+      </div>
+
+    </div>
+
+  </body>
 </html>
