@@ -1,8 +1,12 @@
 /* ------------- fonts ------------ */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Bangers');
+
 /* ------------- items ------------ */
 @import url("items-style-1.css");
+@import url("items-style-2.css");
+
+/* -------------------------------- */
 
 * {
   font-family: 'Roboto', sans-serif;
