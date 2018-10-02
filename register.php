@@ -121,7 +121,7 @@ $_POST["NombreCompleto"]=trim(ucwords($_POST["NombreCompleto"]));
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nuevo Usuario</title>
-	<link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link ="css/bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main-style.css">
 	<link rel="stylesheet" href="css/styleforms.css">
 

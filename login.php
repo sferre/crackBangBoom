@@ -40,20 +40,24 @@ var_dump($_POST);
 
 <head>
 	<meta charset="utf-8">
-	<title>Login</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link ="css/bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main-style.css">
 	<link rel="stylesheet" href="css/styleforms.css">
 </head>
 
 <body class="formularios">
-	<form action="login.php" method="post" id="login">
+	<div>
+		<?php include('layout/header.php'); ?>
+	</div>
+	<form class="container-fluid" action="login.php" method="post" id="login">
 			<br>
 		<div class="form">
 			<h1 class="titulo">¡Loggeate!</h1>
 				<br>
 			<div>
-					<label>Nombre de Usuario
+					<label> Nombre de Usuario
 						<input type="text" name="NombreUsuario" value="<?php echo $tempUserName ?>">
 					</label>
 					<label class="error">	<?php echo $errorUserName; ?>
@@ -62,8 +66,9 @@ var_dump($_POST);
 				<br>
 			<div>
 					<label>Constraseña
-			      <input type="password" name="Password" >
+			      <input class="inputsx" type="password" name="Password" >
 					</label>
+					<br>
 					<label class="error"> <?php echo $errorPassword; ?>
 			    </lebel>
 			</div>
@@ -78,5 +83,8 @@ var_dump($_POST);
 			</div>
 		</div>
 	</form>
+	<div class="container-fluid">
+		<?php include('layout/footer.php'); ?>
+	</div>
 </body>
 </html>

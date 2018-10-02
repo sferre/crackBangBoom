@@ -6,32 +6,41 @@
       <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
       <link rel="stylesheet" href="css/main-style.css">
       <link rel="stylesheet" href="css/perfil.css">
-    <title>Crack Bang Boom!</title>
+    <title>Perfil!</title>
   </head>
   <body>
       <!--HEADER-->
       <?php include('layout/header.php'); ?>
 
       <div class="container-fluid">
-
-        <!--Imagen del usuario-->
-        <div class="row img-perfil">
-          <img src="images/icons/profile-pic.jpg" alt="">
+        <div class="row perfil">
+            <!--Imagen del usuario-->
+            <div class="col-4 img-perfil">
+              <img src="images/icons/profile-pic.jpg" alt="">
+            </div>
+            <!--Info Personal del usuario-->
+            <div class="col-8 info-personal">
+              <div class="row">
+                <div class="col-12 nombre-usuario misDatos">
+                  <h1>Nombre Completo :</h1> 
+                  <p>Pepe pipo </p>
+                  <h1>Nombre de Usuario :</h1>
+                  <p>Zaraza</p>
+                  <h1>Pais de Nacimiento :</h1>
+                  <p>Santa Lucia</p>
+                  <h1>E-Mail :</h1>
+                  <p>pepe123@gmail.com</p>
+                </div>
+              </div>
+            </div>
         </div>
-        <!--Info Personal del usuario-->
-        <div class="row info-personal">
-          <div class="col-12 nombre-usuario">
-            <h1>Nombre Apellido</h1>
-          </div>
-          <div class="col-12 edit-info-personal">
+        <div class="col-12 edit-info-personal">
             <ul class="col-12">
               <li><a class=""href="#">Editar Info</a></li>
               <li><a class=""href="#">Sing Out</a></li>
             </ul>
 
           </div>
-
-        </div>
         <!--Info del usuario en la WEB-->
         <div class="row info-web">
 
