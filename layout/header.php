@@ -25,7 +25,7 @@
           <li><a href="#">Sobre Nosotros</a></li>
           <li><a href="faq.php">FAQs</a></li>
           <li><a href="contact.php">Contacto</a></li>
-          <li><a href="#">Ingresar</a></li>
+          <li><a href="login.php">Ingresar</a></li>
           <li><a href="perfil.php">Mi Perfil</a></li>
         </ul>
     </nav>
