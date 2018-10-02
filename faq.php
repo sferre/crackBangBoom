@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
 	<title>Preguntas Frecuentes</title>
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/faqstyles.css">
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/contact-style.css">
 </head>
 <body>
 	<section>
+		<?php include('layout/header.php'); ?>
+		<div class="container-fluid contact-principal">
 		<div>
 			<h1 class="estilosDeTitulosPrin">Preguntas Frecuentes</h2>
 			</div>
@@ -108,8 +117,7 @@
 					</div>
 				</div>
 
-
-
+		</div>
 		</div>
 	</section>
 
