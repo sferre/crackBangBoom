@@ -346,7 +346,8 @@ footer {
   .navigation-ul li {
     display: inline;
     padding: 9px;
-    font-size: 18px;
+    font-size: 14px;
+    text-transform: uppercase;
   }
 
   .navigation-ul li a {
