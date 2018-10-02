@@ -64,6 +64,7 @@ var_dump($_POST);
 	        <div class="row titulo-contact">
 	          <h1 class="col-12">¡Loggeate!</h1>
 	        </div>
+					<br>
 
 					<!--Datos del Formulario -->
 					<label>Nombre de Usuario:</label>
@@ -81,11 +82,11 @@ var_dump($_POST);
 					<label class="erroresx"><?php echo $errorPassword; ?></label>
 					<br>
 
-					<button type="submit" class:"button">
+					<button type="submit" class:"btn-first">
 						Ingresar
 					</button>
 
-					<button type="reset">
+					<button type="reset" class:"btn-last">
 						Olvide Mi Constraseña
 					</button>
 

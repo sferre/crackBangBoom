@@ -44,7 +44,8 @@
 }
 
 .contact-form button{
-  width: 49%;
+  width: 100%;
+  margin-bottom: 5px;
   background-color: #E52328;
   border: none;
   color: white;
@@ -55,7 +56,6 @@
   cursor: pointer;
 	border-radius: 5px;
 }
-
 .contact-form button:hover{
 	background-color:#42A9E0;
 	color: white;
@@ -82,6 +82,10 @@
   }
   .titulo-contact p{
     font-size: 20px;
+  }
+
+  .contact-form button{
+    width: 49%;
   }
 
 }
