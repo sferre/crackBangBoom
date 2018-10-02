@@ -26,7 +26,7 @@
           <li><a href="faq.php">FAQs</a></li>
           <li><a href="contact.php">Contacto</a></li>
           <li><a href="login.php">Ingresar</a></li>
-          <li><a href="perfil.php">Mi Perfil</a></li>
+          <li><a href="user_profile.php">Mi Perfil</a></li>
         </ul>
     </nav>
 
