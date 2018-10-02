@@ -10,6 +10,8 @@
   border-radius: 20px;
   background-color: #f2f2f2;
   padding: 20px;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .titulo-contact h1{
@@ -24,21 +26,21 @@
 }
 
 .contact-form input{
-font-size: 15px;
-width: 100%;
-padding: 12px 20px;
-margin: 5px 0;
-border: 1px solid #ccc;
-border-radius: 10px;
+  font-size: 15px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
 .contact-form textarea{
-font-size: 15px;
-width: 100%;
-padding: 12px 20px;
-margin: 5px 0;
-border: 1px solid #ccc;
-border-radius: 10px;
+  font-size: 15px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
 .contact-form button{
