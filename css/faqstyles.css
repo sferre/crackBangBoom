@@ -3,19 +3,24 @@
 .estilosDeTitulosPrin{
 	margin-bottom: 5px;
 	padding-bottom: 5px;
-	color: blue;
-	font-size: 20px;
+	color: red;
+	font-size: 50px;
 	font-weight: 400;
 	display: block;
-	font-family: Arial;
 }
 
+h1{
+	text-align: center;
+}
+
+
+h2{font-size: 30px;}
+
 .preguntas{
-	background: red;
+	background: white;
 	margin-bottom: 1px;
 	padding: 10px 30px;
 	position: relative;
-	font-family: Arial;
 	color: #595959;
 	border: 0;
 	display: block;

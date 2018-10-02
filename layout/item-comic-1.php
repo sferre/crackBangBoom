@@ -1,8 +1,16 @@
+<?php include('comics.php'); ?>
+
+<?php
+foreach ($novedades as $novedad) {
+
+ ?>
+
 <div class="item">
+
   <a>
 <!-- ***** Portada Comic ***** -->
     <div class="cover">
-      <img src="./images/covers/wonder-woman-1.jpg" alt="">
+      <img src="<?php echo $novedad['cover']; ?>" alt="">
       <!-- <img src="" alt="oferta"> -->
     </div>
 <!-- ***** Info Comic ***** -->
@@ -19,3 +27,5 @@
     </div>
   </a>
 </div>
+
+<?php } ?>

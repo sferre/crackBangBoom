@@ -9,21 +9,24 @@
           <img class="img-menu" src="images/icons/menu.png" alt="menu">
         </label>
         <!-- ***** checkbox ***** -->
-      <input type="checkbox" id="menu-check">
+
       </div>
     </div>
 
 
-<!-- ***** logo ***** -->
+    <!-- ***** logo ***** -->
     <div id="nav-logo" class="">
       <a href="index.php"><img src="images/icons/icon-cbb-02.svg" alt="CBB"></a>
     </div>
 
+
+    <!-- ***** checkbox ***** -->
+    <input type="checkbox" id="menu-check">
     <!-- ***** nav ***** -->
     <nav class="navigation">
       <ul class="navigation-ul">
           <li><a href="#">Sobre Nosotros</a></li>
-          <li><a href="#">FAQs</a></li>
+          <li><a href="faq.php">FAQs</a></li>
           <li><a href="contact.php">Contacto</a></li>
           <li><a href="#">Ingresar</a></li>
         </ul>
