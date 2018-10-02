@@ -83,6 +83,7 @@ $_POST["NombreCompleto"]=trim(ucwords($_POST["NombreCompleto"]));
 	if($_FILES["Avatar"]["error"] === 0 ) {
 		$ex = pathinfo($_FILES["Avatar"]["name"], PATHINFO_EXTENSION);
 		if( $ex == "jpg" || $ex == "png" || $ex == "svg"){
+			if (!is_dir('avatars') ) mkdir('avatars');
 			move_uploaded_file($_FILES['Avatar']['tmp_name'], 'avatars/'.$_POST['NombreUsuario'].'.'.$ex);
     }else{
       $errorAvatar = 'Los formatos válidos son .jpg, .png y .svg';
@@ -118,6 +119,7 @@ $_POST["NombreCompleto"]=trim(ucwords($_POST["NombreCompleto"]));
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nuevo Usuario</title>
 	<link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main-style.css">

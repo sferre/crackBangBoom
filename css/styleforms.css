@@ -64,10 +64,11 @@ button:hover{
 	color: white;
 }
 
- @media (min-width:767px) {
+ @media (min-width:768px) {
 
    .form {
        width: 500px;
+      
     }
 
 }
