@@ -39,7 +39,7 @@ var_dump($_POST);
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Crack Bang Boom! - Preguntas Frecuentes</title>
+    <title>Crack Bang Boom! - Login</title>
     <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
@@ -70,7 +70,7 @@ var_dump($_POST);
 							<input type="text" name="NombreUsuario" value="<?php echo $tempUserName ?>">
 					</label>
 
-					<label class="error"><?php echo $errorUserName; ?></label>
+					<label class="erroresx"><?php echo $errorUserName; ?></label>
 
 
 
@@ -78,7 +78,7 @@ var_dump($_POST);
 					    <input class="inputsx" type="password" name="Password" >
 					</label>
 
-					<label class="error"><?php echo $errorPassword; ?></label>
+					<label class="erroresx"><?php echo $errorPassword; ?></label>
 
 
 

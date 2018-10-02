@@ -181,7 +181,6 @@ $_POST["NombreCompleto"]=trim(ucwords($_POST["NombreCompleto"]));
 							<option value="República Dominicana">República Dominicana</option>
 							<option value="Uruguay">Uruguay</option>
 							<option value="Venezuela">Venezuela</option>
-							<option value="Otros Países">Otros Países</option>
 							<option value="Afganistán">Afganistán</option>
 							<option value="Albania">Albania</option>
 							<option value="Alemania">Alemania</option>
