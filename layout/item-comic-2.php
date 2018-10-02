@@ -3,7 +3,7 @@
 <!-- ***** Portada Comic ***** -->
     <div class="cover">
       <a>
-      <!--<img src="./images/covers/wonder-woman-1.jpg" alt="">-->
+      <img src="./images/covers/icon-wonder.png" alt="">
       <!-- <img src="" alt="oferta"> -->
       </a>
     </div>
