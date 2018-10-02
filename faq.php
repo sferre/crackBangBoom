@@ -35,7 +35,8 @@
 
   			<div>
   			<h2 class="titulosPrin">Sobre la pagina</h2>
-  			<div class="preguntas">
+
+        <div class="preguntas">
   				<h2>¿Qué es la pagina?</h2>
   				<div>
   					<p>
@@ -43,7 +44,8 @@
   					</p>
   				</div>
   			</div>
-  			<div class="preguntas">
+
+        <div class="preguntas">
   				<h2>¿Como accedo al servicio?</h2>
   				<div>
   					<p>
