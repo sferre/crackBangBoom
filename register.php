@@ -119,11 +119,19 @@ $_POST["NombreCompleto"]=trim(ucwords($_POST["NombreCompleto"]));
 <head>
 	<meta charset="utf-8">
 	<title>Nuevo Usuario</title>
+	<link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main-style.css">
 	<link rel="stylesheet" href="css/styleforms.css">
+
 </head>
 
 <body class="formularios">
+
+	<div class="container-fluid">
+		<?php include('layout/header.php'); ?>
+	</div>
+
+
 	<form action="register.php" method="post" id="register" enctype="multipart/form-data">
 			 <br>
 		<div class="form">
@@ -434,5 +442,8 @@ $_POST["NombreCompleto"]=trim(ucwords($_POST["NombreCompleto"]));
 			</div>
 		</div>
 	</form>
+	<div class="container-fluid">
+		<?php include('layout/footer.php'); ?>
+	</div>
 </body>
 </html>
