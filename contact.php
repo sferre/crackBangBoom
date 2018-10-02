@@ -23,7 +23,7 @@
     <div class="container-fluid contact-principal">
     <!--Formulario -->
       <form class="contact-form" action="Contacto.php" method="post">
-        
+
         <!--Titulo -->
         <div class="row-justify-content-center titulo-contact">
           <h1 clas="col-12">CONTACTO</h1>
