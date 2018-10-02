@@ -65,6 +65,12 @@
 
 
 @media (min-width:1024px) {
+
+  .contact-form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
   .titulo-contact h1{
     margin: 16px 0 0 10px;
     font-size: 50px;

@@ -12,11 +12,18 @@
   </head>
 
   <body>
+
+    <div id="desktop-container">
+
     <!--HEADER-->
     <?php include('layout/header.php'); ?>
-      <div class="container-fluid contact-principal">
-      <!--Formulario -->
+
+    </div>
+
+    <div class="container-fluid contact-principal">
+    <!--Formulario -->
       <form class="contact-form" action="Contacto.php" method="post">
+        
         <!--Titulo -->
         <div class="row-justify-content-center titulo-contact">
           <h1 clas="col-12">CONTACTO</h1>
@@ -42,14 +49,20 @@
           <br>
         <div class="row justify-content-center">
             <button class="col-4" type="submit" class="button">  Enviar! </button>
+        </div>
+
       </form>
+
     </div>
-  </div>
+
+  <div id="desktop-container">
 
     <!--FOOTER-->
     <div class="container-fluid">
       <?php include('layout/footer.php'); ?>
     </div>
+
+  </div>
 
   </body>
 </html>
