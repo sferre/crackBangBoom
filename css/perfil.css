@@ -1,0 +1,14 @@
+body{
+	background-color: grey;
+}
+
+.contenedor{
+	text-align: center;
+	color: white;
+	border-style: solid;
+	margin-top: 100px;
+}
+.contenedorMedio{
+	border-style: double;
+}
+

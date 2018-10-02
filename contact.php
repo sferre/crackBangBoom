@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/main-style.css">
     <link rel="stylesheet" href="css/contact-style.css">
   </head>
-
   <body>
 
     <div id="desktop-container">
