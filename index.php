@@ -41,10 +41,6 @@
 
               <!--LISTADO DE COMICS-->
               <?php include('layout/item-comic-1.php'); ?>
-              <?php include('layout/item-comic-1.php'); ?>
-              <?php include('layout/item-comic-1.php'); ?>
-              <?php include('layout/item-comic-1.php'); ?>
-
 
             </div>
           </div>
@@ -60,9 +56,7 @@
 
               <!--LISTADO DE COMICS-->
               <?php include('layout/item-comic-1.php'); ?>
-              <?php include('layout/item-comic-1.php'); ?>
-              <?php include('layout/item-comic-1.php'); ?>
-              <?php include('layout/item-comic-1.php'); ?>
+              
 
 
             </div>
