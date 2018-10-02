@@ -13,7 +13,9 @@
       <?php include('layout/header.php'); ?>
 
       <div class="container-fluid">
+         <h1 class="tituloPerfil">Mi Perfil</h1>
         <div class="row perfil">
+
             <!--Imagen del usuario-->
             <div class="col-4 img-perfil">
               <img src="images/icons/profile-pic.jpg" alt="">
