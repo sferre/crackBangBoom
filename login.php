@@ -7,15 +7,6 @@ $errorPassword = '';
 //Creamos las variables de los valores temporales ante eventuales errores
 $tempUserName = '';
 
-
-//Creamos un Array con algunos Usuarios de prueba
-$User = [
-	['NombreCompleto' => 'Marcos Cavanagh', 'NombreUsuario' => 'MarcosCav', 'PaisNacimiento' => 'AR', 'Email' => 'marcoscav@gmail.com', 'Avatar' => 'images/avatar.jpg', 'Password' => 'hola1234'],
-	['NombreCompleto' => 'Marcos C', 'NombreUsuario' => 'Cav', 'PaisNacimiento' => 'AL', 'Email' => 'marcoscav@gmil.com', 'Avatar' => 'images/av.jpg', 'Password' => 'h34'],
-	['NombreCompleto' => 'M Cavanagh', 'NombreUsuario' => 'Marcos', 'PaisNacimiento' => 'LR', 'Email' => 'marcoscav@gl.com', 'Avatar' => 'images/atar.jpg', 'Password' => 'h']
-];
-
-
 //Empezamos con las Validaciones si existe info vía POST
 if ($_POST){
 
@@ -23,7 +14,7 @@ if ($_POST){
 var_dump($_POST);
 
 //Ahora si la validaciones propiamente dichas
-	//Verificamos si el Nombre de Usuario es Válido y/o si Existe en nuestra BDD (Array)
+	//Verificamos si se escribió un Nombre de Usuario
 	if(empty($_POST["NombreUsuario"])) {
 		$errorUserName = 'Este es un campo requerido';
 	} else { $tempUserName = $_POST["NombreUsuario"];
@@ -49,7 +40,7 @@ var_dump($_POST);
 
 <head>
 	<meta charset="utf-8">
-	<title>Nuevo Usuario</title>
+	<title>Login</title>
 	<link rel="stylesheet" href="css/main-style.css">
 	<link rel="stylesheet" href="css/styleforms.css">
 </head>

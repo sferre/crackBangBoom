@@ -49,10 +49,12 @@ $_POST["NombreCompleto"]=trim(ucwords($_POST["NombreCompleto"]));
 		$errorUserName = 'Este es un campo requerido';
 	} else { $tempUserName = $_POST["NombreUsuario"];
 	}
-	//IMPO: Ver como hacer que no se repitan usuarios vs el ARRAY
-
-
-
+	//Verificamos si existe un Usuario con ese nombre en nuestra BDD (Array)
+	for ($i=0; $i<count($User); $i++) {
+	    if (in_array($_POST["NombreUsuario"], $User[$i])) {
+	        $errorUserName = 'Este Usuario ya existe';
+	    }
+	}
 
 	//Verificamos si el País seleccionado es válido y está en nuestro Array $Countries
 	if(in_array($_POST["PaisNacimiento"], $Countries) == "") {
@@ -60,7 +62,7 @@ $_POST["NombreCompleto"]=trim(ucwords($_POST["NombreCompleto"]));
 	} else { $tempCountry = $_POST["PaisNacimiento"];
 	}
 
-	//Verificamos si el Email es válido y/o ya Existe en nuestra BBD (Array)
+	//Verificamos si el Email es válido
 	if (filter_var( $_POST['Email'] , FILTER_VALIDATE_EMAIL )===false) {
     $errorEmail = 'El Correo es inválido';
 	} else { $tempEmail = $_POST['Email'];
@@ -68,9 +70,13 @@ $_POST["NombreCompleto"]=trim(ucwords($_POST["NombreCompleto"]));
 	if(empty($_POST["Email"])) {
 		$errorEmail = 'Este es un campo requerido';
 		}
-	//IMPO: Ver como hacer que no se repitan Mails vs el ARRAY
 
-
+	//Verificamos si el Email ya existe	en nuestra BBD (Array)
+	for ($i=0; $i<count($User); $i++) {
+	    if (in_array($_POST["Email"], $User[$i])) {
+	        $errorEmail = 'Este Email ya esta registrado';
+	    }
+	}
 
 	//Verificamos si el formato de la imagen es el adecuado
 	var_dump($_FILES);
@@ -99,10 +105,6 @@ $_POST["NombreCompleto"]=trim(ucwords($_POST["NombreCompleto"]));
 		$errorPassword2 = 'Las contraseñas deben coincidir';
 	}
 
-	/*foreach ($User as $_POST["NombreUsuario"] ) {
-		$errorUserName = 'Ups! ese Nombre de Usuario ya está en uso :(';
-		break;
-	}*/
  //$User = new User( $_POST['NombreCompleto'], $_POST['NombreUsuario'], $_POST['PaisNacimiento'], $_POST['Email'], $_POST['Avatar'], $_POST['Password']);
 
 }
