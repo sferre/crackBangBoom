@@ -6,6 +6,10 @@
   padding: 20px;
 }
 
+.contact-principal .contact-error{
+  color:red;
+}
+
 .contact-form{
   border-radius: 20px;
   background-color: #f2f2f2;
