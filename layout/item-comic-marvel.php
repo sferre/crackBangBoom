@@ -15,9 +15,9 @@ foreach ($charactersMarvel as $characterMarvel) { ?>
         <div class="title">
           <a><p><?php echo $characterMarvel['character']; ?></p></a>
         </div>
-        <div class="edition">
+        <!-- <div class="edition">
             <p><?php echo $characterMarvel['quote']; ?></p>
-        </div>
+        </div> -->
         <div class="price">
           <p><?php echo $characterMarvel['position']; ?></p>
         </div>

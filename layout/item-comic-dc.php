@@ -15,9 +15,9 @@ foreach ($charactersDC as $characterDC) { ?>
         <div class="title">
           <a><p><?php echo $characterDC['character']; ?></p></a>
         </div>
-        <div class="edition">
+        <!-- <div class="edition">
             <p><?php echo $characterDC['quote']; ?></p>
-        </div>
+        </div> -->
         <div class="price">
           <p><?php echo $characterDC['position']; ?></p>
         </div>
