@@ -103,7 +103,7 @@
             <span class="contact-error"> <?php echo $errorComments; ?> </span>
             <textarea name="comments" value="<?php echo $tempComments;?>" placeholder="Dejanos tu comentario aquí" ></textarea>
 
-          <br>
+          <br><br>
         <div class="row justify-content-center">
             <button class="col-4" type="submit" class="button">  Enviar! </button>
         </div>
