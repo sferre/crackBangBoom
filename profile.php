@@ -6,6 +6,7 @@
       <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
       <link rel="stylesheet" href="css/main-style.css">
       <link rel="stylesheet" href="css/profile-style.css">
+      <link rel="stylesheet" href="items-style-profile.css">
     <title>Mi Perfil!</title>
   </head>
   <body>
