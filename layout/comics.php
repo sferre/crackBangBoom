@@ -16,23 +16,23 @@ $mangas =[
           ];
 
 $charactersMarvel =[
-  ['character'=>'Spiderman','quote'=>'"Un gran poder conlleva una gran responsabilidad"','position'=>'#1','pic'=>'./images/covers/characters/spiderman.jpg'],
+  ['character'=>'Spiderman','quote'=>'Un gran poder conlleva una gran responsabilidad','position'=>'#1','pic'=>'./images/covers/characters/spiderman.jpg'],
   ['character'=>'Iron Man','quote'=>'FRASE','position'=>'#2','pic'=>'./images/covers/characters/ironman.jpg'],
-  ['character'=>'Capitan America','quote'=>'FRASE','position'=>'#3','pic'=>'./images/covers/characters/captainamerica.jpg'],
-  ['character'=>'Wolverine','quote'=>'"I am the best at what I do and what I do is not nice"', 'position'=>'#4','pic'=>'./images/covers/characters/wolverine.jpg'],
+  ['character'=>'Capitan America','quote'=>'Incluso cuando no tenía nada, tenía a Bucky.','position'=>'#3','pic'=>'./images/covers/characters/captainamerica.jpg'],
+  ['character'=>'Wolverine','quote'=>'I am the best at what I do and what I do is not nice', 'position'=>'#4','pic'=>'./images/covers/characters/wolverine.jpg'],
   ['character'=>'Hulk','quote'=>'FRASE','position'=>'#5','pic'=>'./images/covers/characters/hulk.jpg'],
-  ['character'=>'Thor','quote'=>'FRASE','position'=>'#6','pic'=>'./images/covers/characters/thor.jpg'],
+  ['character'=>'Deadpool','quote'=>'Mi nombre es Pool. Dead Pool.','position'=>'#6','pic'=>'./images/covers/characters/deadpool.jpg'],
 
 ];
 
-  $charactersDC =[
-    ['character'=>'Batman','quote'=>'"I am vengance.I am the night...I am BATMAN" ','position'=>'#1','pic'=>'./images/covers/characters/batman.jpeg'],
-    ['character'=>'Superman','quote'=>'"¿Es un pajaro?¿Es un avión? Es Superma!"','position'=>'#2','pic'=>'./images/covers/characters/superman.jpg'],
-    ['character'=>'Wonder Woman','quote'=>'FRASE','position'=>'#3','pic'=>'./images/covers/characters/ww2.jpg'],
-    ['character'=>'Flash','quote'=>'FRASE','position'=>'#4','pic'=>'./images/covers/characters/flash.jpg'],
-    ['character'=>'Linterna Verde','quote'=>'"In the brightest day, in the blackest night, no evil shall escape my sight"','position'=>'#5','pic'=>'./images/covers/characters/greenlantern.jpg'],
-    ['character'=>'Aquaman','quote'=>'FRASE','position'=>'#6','pic'=>'./images/covers/characters/aquaman.jpg'],
-  ];
+$charactersDC =[
+  ['character'=>'Batman','quote'=>'I am vengance.I am the night...I am BATMAN','position'=>'#1','pic'=>'./images/covers/characters/batman.jpeg'],
+  ['character'=>'Superman','quote'=>'¿Es un pajaro?¿Es un avión? Es Superma!','position'=>'#2','pic'=>'./images/covers/characters/superman.jpg'],
+  ['character'=>'Wonder Woman','quote'=>'FRASE','position'=>'#3','pic'=>'./images/covers/characters/ww2.jpg'],
+  ['character'=>'Flash','quote'=>'FRASE','position'=>'#4','pic'=>'./images/covers/characters/flash.jpg'],
+  ['character'=>'Linterna Verde','quote'=>'In the brightest day or the blackest night, no evil shall escape','position'=>'#5','pic'=>'./images/covers/characters/greenlantern.jpg'],
+  ['character'=>'Aquaman','quote'=>'FRASE','position'=>'#6','pic'=>'./images/covers/characters/aquaman.jpg'],
+];
 
 
  ?>
