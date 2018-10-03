@@ -40,7 +40,7 @@
             <div class="allitems">
 
               <!--LISTADO DE COMICS-->
-              <?php include('layout/item-comic-novedades.php'); ?>
+              <?php include('layout/item-comic-new.php'); ?>
 
             </div>
           </div>

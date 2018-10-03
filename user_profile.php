@@ -23,43 +23,57 @@
 
     <div id="desktop-container">
 
-      <div class="container-fluid">
+      <div class="container-fluid user-profile">
 
-        <!--Imagen del usuario-->
-        <div class="row img-perfil">
+        <!--Imagen del user-->
+        <div class="row img-profile">
           <img src="images/icons/profile-pic.jpg" alt="">
         </div>
-        <!--Info Personal del usuario-->
+
+        <!--Info Personal del user-->
         <div class="row info-personal">
-          <div class="col-12 nombre-usuario">
+          <div class="col-12 name-user">
             <h1>Nombre Apellido</h1>
           </div>
-          <div class="col-12 edit-info-personal">
-            <ul class="col-12">
-              <li><a class=""href="#">Editar Info</a></li>
-              <li><a class=""href="#">Sing Out</a></li>
-            </ul>
-
+          <div class="col-12 email-user">
+            <h2>myuser@email.com</h2>
           </div>
-
+          <div class="col-12 user-actions">
+            <a href="#">Editar Info</a>
+            <a href="#">Sing Out</a>
+          </div>
         </div>
-        <!--Info del usuario en la WEB-->
-        <div class="row info-web">
 
-          <div class="info-compras">
-            <a href="#"> <p>Compras</p> </a>
-            <p> Todas tus compras realizadas</p>
+        <!--Info del user en la WEB-->
+        <div class="row containter info-purchase">
+
+          <div class="info-bought">
+            <a href="#">
+              <h3>Mis Compras</h3>
+            </a>
+            <div class="allitems">
+              <?php include ('layout/item-comic-bought.php')?>
+            </div>
           </div>
 
           <div class="info-list">
-            <a href="#"> <p>Wish List</p> </a>
-            <p> Favoritos guardados</p>
+            <a href="#">
+              <h3>Mi Wish List</h3>
+            </a>
+            <div class="allitems">
+              <?php include ('layout/item-comic-new.php')?>
+            </div>
           </div>
 
-          <div class="info-pago">
-              <a href="#"> <p>Método de pago</p> </a>
-              <p>Editar o agregar método de pago</p>
+          <div class="info-history">
+            <a href="#">
+              <h3>Leídas recientemente</h3>
+            </a>
+            <div class="allitems readhistory">
+              <?php include ('layout/item-comic-history.php')?>
+            </div>
           </div>
+
         </div>
 
       </div>
