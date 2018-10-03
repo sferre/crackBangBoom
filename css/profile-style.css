@@ -13,7 +13,8 @@
   width: 210px;
   height: 210px;
   margin: 20px;
-  border-radius: 20px;
+  border-radius: 10px;
+  border: 1px solid #999;
 }
 
 .name-user h1{
@@ -33,15 +34,17 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 5px 0 10px 0;
+  margin: 5px 0 20px 0;
 }
 
 .user-actions a {
   padding: 0px 10px;
+  margin: 0 2px 0 2px;
+  border: 1px solid #999;
+  border-radius: 5px;
 }
 
 .info-purchase{
-  padding-bottom: 5px;
 }
 
 .info-purchase h3 {
