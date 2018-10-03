@@ -1,7 +1,7 @@
 <?php include('comics.php'); ?>
 
 <?php
-foreach ($histories as $history) {
+foreach ($wishes as $wishlist) {
 
  ?>
 
@@ -10,16 +10,16 @@ foreach ($histories as $history) {
   <a>
 <!-- ***** Portada Comic ***** -->
     <div class="cover">
-      <img src="<?php echo $history['cover']; ?>" alt="">
+      <img src="<?php echo $wishlist['cover']; ?>" alt="">
       <!-- <img src="" alt="oferta"> -->
     </div>
 <!-- ***** Info Comic ***** -->
     <div class="info">
         <div class="title">
-          <p><?php echo $history['title']; ?></p>
+          <p><?php echo $wishlist['title']; ?></p>
         </div>
         <div class="edition">
-          <p><?php echo $history['edition']; ?></p>
+          <p><?php echo $wishlist['edition']; ?></p>
         </div>
 
     </div>

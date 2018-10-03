@@ -70,7 +70,7 @@
                 <h3>Mi Wish List</h3>
               </a>
               <div class="allitems">
-                <?php include ('layout/item-comic-new.php')?>
+                <?php include ('layout/item-comic-wishlist.php')?>
               </div>
             </div>
 

@@ -41,20 +41,25 @@ $boughts =[
   ['title'=>'All Star Superman','edition'=>'Vol.10-15','price'=>'$199.99', 'cover'=>'./images/covers/all-star-superman-1.jpg'],
   ['title'=>'Wonder Woman','edition'=>'ISSUE #1','price'=>'$443.40', 'cover'=>'./images/covers/wonder-woman-1.jpg'],
   ['title'=>'Batman','edition'=>'ISSUE #9','price'=>'$350.99', 'cover'=>'./images/covers/batman-dkr-1.png'],
+  ['title'=>'Spider Man','edition'=>'ISSUE #310','price'=>'$45.50', 'cover'=>'./images/covers/spiderman-spectacular-310.jpg'],
   ];
 
-$wishs =[ ['title'=>'Civil War','edition'=>'ISSUE #1','price'=>'$35.50', 'cover'=>'./images/covers/civil-war-vol1.jpg'],
+$wishes =[
+  ['title'=>'Civil War','edition'=>'ISSUE #1','price'=>'$35.50', 'cover'=>'./images/covers/civil-war-vol1.jpg'],
   ['title'=>'Born Again: Daredevil','edition'=>'Vol.1','price'=>'$499.99', 'cover'=>'./images/covers/daredevil-born-again-1.jpg'],
   ['title'=>'X-men','edition'=>'ISSUE #2','price'=>'$43.33', 'cover'=>'./images/covers/xmen-1.jpg'],
   ['title'=>'Randma 1/2','edition'=>'ISSUE #9','price'=>'$4.99', 'cover'=>'./images/covers/randma12-vol16.jpg'],
+  ['title'=>'Born Again: Daredevil','edition'=>'Vol.1','price'=>'$499.99', 'cover'=>'./images/covers/daredevil-born-again-1.jpg'],
+  ['title'=>'Civil War','edition'=>'ISSUE #1','price'=>'$35.50', 'cover'=>'./images/covers/civil-war-vol1.jpg'],
   ];
 
-
-$historys =[
+$histories =[
   ['title'=>'All Star Superman','edition'=>'Vol.10-15','price'=>'$199.99', 'cover'=>'./images/covers/all-star-superman-1.jpg'],
   ['title'=>'Wonder Woman','edition'=>'ISSUE #1','price'=>'$443.40', 'cover'=>'./images/covers/wonder-woman-1.jpg'],
   ['title'=>'Dragon Ball Z','edition'=>'VOL.1','price'=>'$49.99', 'cover'=>'./images/covers/dragonballz-1.jpg'],
-  ['title'=>'Black Panther','edition'=>'ISSUE #33','price'=>'$53.40', 'cover'=>'./images/covers/black-panther-4.jpg']
+  ['title'=>'Black Panther','edition'=>'ISSUE #33','price'=>'$53.40', 'cover'=>'./images/covers/black-panther-4.jpg'],
+  ['title'=>'All Star Superman','edition'=>'Vol.10-15','price'=>'$199.99', 'cover'=>'./images/covers/all-star-superman-1.jpg'],
+  ['title'=>'Wonder Woman','edition'=>'ISSUE #1','price'=>'$443.40', 'cover'=>'./images/covers/wonder-woman-1.jpg'],
   ];
 
  ?>
