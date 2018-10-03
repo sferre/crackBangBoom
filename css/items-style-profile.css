@@ -1,0 +1,23 @@
+
+.allitems .item{
+/* contenedor de los covers + info */
+  height: 200px;
+}
+
+.info-bought .cover {
+  width: 90px;
+  height: 120px;
+  /* border: 2px solid green; */
+}
+
+.info-bought .cover img{
+  width: 90px;
+  height: 120px;
+  border: 2px solid green;
+}
+
+.info {
+  margin: 0;
+  width: 90px;
+  height: 80px;
+}
