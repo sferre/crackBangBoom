@@ -115,48 +115,54 @@ $_POST["NombreCompleto"]=trim(ucwords($_POST["NombreCompleto"]));
 
 
 <!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Nuevo Usuario</title>
-	<link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/main-style.css">
-	<link rel="stylesheet" href="css/styleforms.css">
-
-</head>
+<html lang="en" dir="ltr">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Crack Bang Boom! - Nuevo Usuario</title>
+		<link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/styleforms.css">
+		<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+		<link rel="stylesheet" href="css/main-style.css">
+		<link rel="stylesheet" href="css/contact-style.css">
+		<link rel="stylesheet" type="text/css" href="css/faq-style.css">
+	</head>
 
 <body class="formularios">
 
-	<div class="container-fluid">
+<!--HEADER-->
+	<div id="desktop-container">
 		<?php include('layout/header.php'); ?>
 	</div>
 
-
-	<form action="register.php" method="post" id="register" enctype="multipart/form-data">
+<!--Titulo -->
+	<form class="contact-form" action="register.php" method="post" id="register" enctype="multipart/form-data">
 			 <br>
 		<div class="form">
 			<h1 class="titulo">¡Sumate a nuestra Comunidad!</h1>
 				<br>
+
+<!--Datos del Formulario -->
 			<div>
-					<label>Nombre Completo
+					<label>Nombre Completo</label>
+					<br>
 						<input type="text" name="NombreCompleto" placeholder="Nombre y Apellido" autofocus value="<?php echo $tempNombreCompleto ?>">
-					</label>
-					<label class="error">	<?php echo $errorNombreCompleto; ?>
-					</label>
+					<br>
+					<label class="error">	<?php echo $errorNombreCompleto; ?> </label>
 			</div>
-				<br>
+
 			<div>
-					<label>Nombre de Usuario
+					<label>Nombre de Usuario</label>
+					<br>
 						<input type="text" name="NombreUsuario" value="<?php echo $tempUserName ?>">
-					</label>
-					<label class="error">	<?php echo $errorUserName; ?>
-					</label>
+					<br>
+					<label class="error">	<?php echo $errorUserName; ?>	</label>
 			</div>
-				<br>
+
 			<div>
-					<label>País de Nacimiento
+					<label>País de Nacimiento</label>
+					<br>
 						<input type="text" list="countries" name="PaisNacimiento" placeholder="Escribe y Selecciona un País" value="<?php echo $tempCountry ?>">
 			      <datalist id="countries">
 			        <option disabled="disabled">Países Habla Hispana</option>
@@ -396,55 +402,60 @@ $_POST["NombreCompleto"]=trim(ucwords($_POST["NombreCompleto"]));
 							<option value="Zambia">Zambia</option>
 							<option value="Zimbabue">Zimbabue</option>
 			      </datalist>
-					</label>
-				  <label class="error"> <?php echo $errorCountry; ?>
-					</label>
+					<br>
+				  <label class="error"> <?php echo $errorCountry; ?> </label>
+					<br>
 			</div>
-				<br>
+
 			<div>
-					<label>E-Mail
+					<label>E-Mail</label>
+					 <br>
 						<input type="email" name="Email" value="<?php echo $tempEmail ?>">
-					</label>
-					<label class="error"> <?php echo $errorEmail; ?>
-					</label>
+					 <br>
+					<label class="error"> <?php echo $errorEmail; ?> </label>
 			</div>
-				<br>
+
 			<div>
-					<label>Imagen de Perfil
+					<label>Imagen de Perfil</label>
+					<br>
 						<input type="file" name="Avatar" placeholder="Elegí una Imagen">
-					</label>
-					<label class="error"> <?php echo $errorAvatar; ?>
-					</label>
+					<br>
+					<label class="error"> <?php echo $errorAvatar; ?>	</label>
 			</div>
-				<br>
+
 			<div>
-					<label>Constraseña
-			      <input type="password" name="Password" >
-					</label>
-					<label class="error"> <?php echo $errorPassword; ?>
-			    </lebel>
+					<label>Constraseña</label>
+					<br>
+					 	<input type="password" name="Password" >
+					<br>
+					<label class="error"> <?php echo $errorPassword; ?> </label>
 			</div>
-				<br>
+
 			<div>
-			    <label>Repetir Constraseña
-			      <input type="password" name="Password2">
-					</label>
-					<label class="error"> <?php echo $errorPassword2; ?>
-			    </lebel>
+			    <label>Repetir Constraseña</label>
+					<br>
+					  <input type="password" name="Password2">
+					<br>
+					<label class="error"> <?php echo $errorPassword2; ?> </label>
 			</div>
-				<br>
+
 			<div>
 					<button type="submit" class:"button">
 						Registrarme!
 					</button>
-			    <button type="reset">
+			    <button type="reset" class:"button">
 						Volver a Empezar
 					</button>
 			</div>
 		</div>
 	</form>
-	<div class="container-fluid">
-		<?php include('layout/footer.php'); ?>
+
+<!--FOOTER-->
+	<div id="desktop-container">
+		<div class="container-fluid">
+			<?php include('layout/footer.php'); ?>
+		</div>
 	</div>
+
 </body>
 </html>

@@ -11,20 +11,16 @@ $tempUserName = '';
 if ($_POST){
 
 //Creamos el var_dump para ver el resultado de nuestro Form
-var_dump($_POST);
+//var_dump($_POST);
 
-//Ahora si la validaciones propiamente dichas
+//Validaciones
 	//Verificamos si se escribió un Nombre de Usuario
 	if(empty($_POST["NombreUsuario"])) {
 		$errorUserName = 'Este es un campo requerido';
 	} else { $tempUserName = $_POST["NombreUsuario"];
 	}
-	//IMPO: Ver como hacer que no se repitan usuarios vs el ARRAY
 
-	//Verificamso si la contraseñe tiene al menos 8 dígitos
-	if(strlen($_POST['Password'])<8){
-		$errorPassword = 'Tu constraseña debe tener al menos 8 caracteres';
-	}
+	//Verificamso si se escribió una Contraseña
 	if(empty($_POST['Password'])){
 		$errorPassword = 'Este es un campo requerido';
 	}
@@ -72,7 +68,7 @@ var_dump($_POST);
 						<br>
 							<input type="text" name="NombreUsuario" value="<?php echo $tempUserName ?>">
 						<br>
-					<label class="erroresx"><?php echo $errorUserName; ?></label>
+					<label class="error"><?php echo $errorUserName; ?></label>
 					<br>
 
 
@@ -80,7 +76,7 @@ var_dump($_POST);
 						<br>
 					    <input type="password" name="Password" >
 						<br>
-					<label class="erroresx"><?php echo $errorPassword; ?></label>
+					<label class="error"><?php echo $errorPassword; ?></label>
 					<br>
 
 					<button type="submit" class:"btn-first">
