@@ -25,53 +25,63 @@
 
       <div class="container-fluid user-profile">
 
-        <!--Imagen del user-->
-        <div class="row img-profile">
-          <img src="images/icons/profile-pic.jpg" alt="">
+        <div class="column-A">
+
+          <div class="row info-personal">
+
+            <!--Imagen del user-->
+            <div class="col-12 img-profile">
+              <img src="images/icons/profile-pic.jpg" alt="">
+            </div>
+
+            <!--Info Personal del user-->
+            <div class="col-12 name-user">
+              <h1>Nombre Apellido</h1>
+            </div>
+            <div class="col-12 email-user">
+              <h2>myuser@email.com</h2>
+            </div>
+            <div class="col-12 user-actions">
+              <a href="#">Editar Info</a>
+              <a href="#">Sing Out</a>
+            </div>
+
+          </div>
+
         </div>
 
-        <!--Info Personal del user-->
-        <div class="row info-personal">
-          <div class="col-12 name-user">
-            <h1>Nombre Apellido</h1>
-          </div>
-          <div class="col-12 email-user">
-            <h2>myuser@email.com</h2>
-          </div>
-          <div class="col-12 user-actions">
-            <a href="#">Editar Info</a>
-            <a href="#">Sing Out</a>
-          </div>
-        </div>
+        <div class="column-B">
 
-        <!--Info del user en la WEB-->
-        <div class="row containter info-purchase">
+          <!--Info del user en la WEB-->
+          <div class="row containter info-purchase">
 
-          <div class="info-bought">
-            <a href="#">
-              <h3>Mis Compras</h3>
-            </a>
-            <div class="allitems">
-              <?php include ('layout/item-comic-bought.php')?>
+            <div class="info-bought">
+              <a href="#">
+                <h3>Mis Compras</h3>
+              </a>
+              <div class="allitems">
+                <?php include ('layout/item-comic-bought.php')?>
+              </div>
             </div>
-          </div>
 
-          <div class="info-list">
-            <a href="#">
-              <h3>Mi Wish List</h3>
-            </a>
-            <div class="allitems">
-              <?php include ('layout/item-comic-new.php')?>
+            <div class="info-list">
+              <a href="#">
+                <h3>Mi Wish List</h3>
+              </a>
+              <div class="allitems">
+                <?php include ('layout/item-comic-new.php')?>
+              </div>
             </div>
-          </div>
 
-          <div class="info-history">
-            <a href="#">
-              <h3>Leídas recientemente</h3>
-            </a>
-            <div class="allitems readhistory">
-              <?php include ('layout/item-comic-history.php')?>
+            <div class="info-history">
+              <a href="#">
+                <h3>Leídas recientemente</h3>
+              </a>
+              <div class="allitems readhistory">
+                <?php include ('layout/item-comic-history.php')?>
+              </div>
             </div>
+
           </div>
 
         </div>

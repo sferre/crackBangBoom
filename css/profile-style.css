@@ -1,11 +1,12 @@
 .user-profile {
   background-color: white;
+  width: 100%;
 }
 
 .img-profile{
-  background-color: white;
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 
 .img-profile img{
@@ -32,7 +33,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 5px 0;
+  margin: 5px 0 10px 0;
 }
 
 .user-actions a {
@@ -79,7 +80,28 @@
 .info-bought, .info-list, .info-history {
   width: 100%;
   height: auto;
-  margin: 5px;
+  margin-bottom: 0px;
   padding: 5px 0;
   cursor: pointer;
+}
+
+@media (min-width:1024px) {
+
+  .user-profile {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .info-purchase h3 {
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  .column-A {
+    width: 25%;
+    margin-right: 30px;
+  }
+  .column-B {
+    width: 75%;
+  }
 }
