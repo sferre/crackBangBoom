@@ -63,6 +63,7 @@ var_dump($_POST);
 					<!--Titulo -->
 	        <div class="row titulo-contact">
 	          <h1 class="col-12">¡Loggeate!</h1>
+						<p class="col-12">¿Aún no tenes cuenta? <a href="register.php">REGISTRATE!</a></p>
 	        </div>
 					<br>
 
