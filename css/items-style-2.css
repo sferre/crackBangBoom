@@ -25,6 +25,7 @@
   border-radius:5px;
   width: 84px;
   height: 84px;
+  border: 1px solid #111;
 }
 
 .subsection .info {

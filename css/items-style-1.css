@@ -16,6 +16,7 @@
 .cover img{
   width: 168px;
   height: 255px;
+  border: 1px solid #111;
 }
 
 .info {
