@@ -1,5 +1,7 @@
 .subsection .allitems {
+
 }
+
 
 .subsection .item {
   /* background-color: #3a3a3a; */
@@ -27,7 +29,7 @@
 .subsection .info {
   width: 150px;
   height: 80px;
-  text-shadow: 1px 1px #cc3300;
+  text-shadow: 2px 1px 2px #cc3300;
 }
 
 .subsection .info p {

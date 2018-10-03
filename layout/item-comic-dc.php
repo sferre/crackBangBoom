@@ -1,31 +1,28 @@
-<?php include('comics.php'); ?>
+<?php include('comics.php');
 
-<?php
-foreach ($novedades as $novedad) {
-
- ?>
+foreach ($charactersDC as $characterDC) { ?>
 
 <div class="item">
-
-  <a>
 <!-- ***** Portada Comic ***** -->
     <div class="cover">
-      <img src="<?php echo $novedad['cover']; ?>" alt="">
+      <a>
+      <img src="<?php echo $characterDC['pic']; ?>" alt="">
       <!-- <img src="" alt="oferta"> -->
+      </a>
     </div>
 <!-- ***** Info Comic ***** -->
     <div class="info">
         <div class="title">
-          <p>Wonder Woman</p>
+          <a><p><?php echo $characterDC['character']; ?></p></a>
         </div>
         <div class="edition">
-          <p>ISSUE #01</p>
+            <p><?php echo $characterDC['quote']; ?></p>
         </div>
         <div class="price">
-          <p>$99.99</p>
+          <p><?php echo $characterDC['position']; ?></p>
         </div>
     </div>
-  </a>
+
 </div>
 
 <?php } ?>

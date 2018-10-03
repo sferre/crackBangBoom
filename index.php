@@ -40,7 +40,7 @@
             <div class="allitems">
 
               <!--LISTADO DE COMICS-->
-              <?php include('layout/item-comic-1.php'); ?>
+              <?php include('layout/item-comic-novedades.php'); ?>
 
             </div>
           </div>
@@ -49,15 +49,13 @@
         <!--Sección de Géneros-->
         <div class="row blue section">
           <div class="name-section col-12">
-            <h1>Generos</h1>
+            <h1>Manga</h1>
           </div>
           <div class="comic-section col-12">
             <div class="allitems">
 
               <!--LISTADO DE COMICS-->
-              <?php include('layout/item-comic-1.php'); ?>
-
-
+              <?php include('layout/item-comic-mangas.php'); ?>
 
             </div>
           </div>
@@ -76,12 +74,8 @@
                 <div class="allitems">
 
                   <!--LISTADO DE COMICS-->
-                  <?php include('layout/item-comic-2.php'); ?>
-                  <?php include('layout/item-comic-2.php'); ?>
-                  <?php include('layout/item-comic-2.php'); ?>
-                  <?php include('layout/item-comic-2.php'); ?>
-                  <?php include('layout/item-comic-2.php'); ?>
-                  <?php include('layout/item-comic-2.php'); ?>
+                  <?php include('layout/item-comic-marvel.php'); ?>
+
 
                 </div>
               </div>
@@ -98,12 +92,7 @@
                 <div class="allitems">
 
                   <!--LISTADO DE COMICS-->
-                  <?php include('layout/item-comic-2.php'); ?>
-                  <?php include('layout/item-comic-2.php'); ?>
-                  <?php include('layout/item-comic-2.php'); ?>
-                  <?php include('layout/item-comic-2.php'); ?>
-                  <?php include('layout/item-comic-2.php'); ?>
-                  <?php include('layout/item-comic-2.php'); ?>
+                  <?php include('layout/item-comic-dc.php'); ?>
 
                 </div>
               </div>

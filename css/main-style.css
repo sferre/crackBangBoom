@@ -216,7 +216,9 @@ header {
 }
 
 /* -------- SUBSECTION -------------- */
-.subsection{
+.subsection .item{
+  display: flex;
+  justify-content: center;
 
 }
 .subsection h1 {
