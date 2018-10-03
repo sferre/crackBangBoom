@@ -12,15 +12,15 @@ foreach ($charactersMarvel as $characterMarvel) { ?>
     </div>
 <!-- ***** Info Comic ***** -->
     <div class="info">
-        <div class="price">
-          <p><?php echo $characterMarvel['position']; ?></p>
-        </div>
-        <div class="title">
-          <a><p><?php echo $characterMarvel['character']; ?></p></a>
-        </div>
-        </div>
-          <p><i><?php echo $characterMarvel['likes'].' likes'; ?></i></p>
-        <div class="edition">
+      <div class="price">
+        <p><?php echo $characterMarvel['position']; ?></p>
+      </div>
+      <div class="title">
+        <a><p><?php echo $characterMarvel['character']; ?></p></a>
+      </div>
+      <div class="edition">
+        <p><i><?php echo $characterMarvel['likes'].' likes'; ?></i></p>
+      </div>
     </div>
 
 </div>
