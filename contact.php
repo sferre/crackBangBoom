@@ -27,7 +27,9 @@
         $errorName = 'Podes decirnos tu identidad secreta...';
       } elseif (strlen($_POST['name'])<2) {
         $errorName = 'Tu nombre debe tener al menos dos letras';
-      } elseif (is_numeric($_POST['name']===true)) {
+      }
+
+      if (is_numeric($_POST['name']===true)) {
         $errorName = 'No sos un Robot...tu Nombre no tiene números';
       }
 
@@ -83,12 +85,12 @@
         <!--Datos del Formulario -->
         <label for=""> Nombre:</label>
         <br>
-            <input type="" name="name" value="<?php echo $tempName;?>">
+            <input type="text" name="name" value="<?php echo $tempName;?>">
             <span class="contact-error"> <?php echo $errorName; ?> </span>
           <br><br>
         <label>E-Mail:</label>
           <br>
-            <input type="" name="email" value="<?php echo $tempEmail;?>">
+            <input type="email" name="email" value="<?php echo $tempEmail;?>">
             <span class="contact-error"> <?php echo $errorEmail; ?> </span>
           <br><br>
         <label for=""> Asunto:</label>
