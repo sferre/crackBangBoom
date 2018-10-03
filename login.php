@@ -3,6 +3,7 @@
 //Creamos las variables de los posibles errores
 $errorUserName = '';
 $errorPassword = '';
+$action ='';
 
 //Creamos las variables de los valores temporales ante eventuales errores
 $tempUserName = '';
@@ -15,16 +16,24 @@ if ($_POST){
 
 //Validaciones
 	//Verificamos si se escribió un Nombre de Usuario
+	if($_POST["NombreUsuario"]!= "admin"){
+		$errorUserName = 'Bang! No encontramos ese usuario, Registrate!';
+	}
 	if(empty($_POST["NombreUsuario"])) {
-		$errorUserName = 'Este es un campo requerido';
+		$errorUserName = 'Bang! Este es un campo requerido';
 	} else { $tempUserName = $_POST["NombreUsuario"];
 	}
 
 	//Verificamso si se escribió una Contraseña
 	if(empty($_POST['Password'])){
-		$errorPassword = 'Este es un campo requerido';
+		$errorPassword = 'Boom! Este es un campo requerido';
 	}
 
+	//Validacion de Usuario y Constraseña "Casero"
+	if($_POST["NombreUsuario"] == "admin"){
+		$action = 'index.php';
+	} else { $action = 'login.php';
+	}
 }
 
 ?>
@@ -54,7 +63,7 @@ if ($_POST){
 
     <div class="container-fluid contact-principal">
 
-			<form class="contact-form" action="login.php" method="post" id="login">
+			<form class="contact-form" action="<?php echo $action; ?>" method="post" id="login">
 
 					<!--Titulo -->
 	        <div class="row titulo-contact">
