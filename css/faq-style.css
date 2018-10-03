@@ -30,13 +30,20 @@
 	font-weight: bold;
 }
 
-42A9E0
+.titulo-contact p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 
 @media (min-width:1024px) {
 
   .faq-content {
-		margin-top: 25px;
-    margin-bottom: 25px;
+		margin: 25px;
+  }
+
+  .align-content {
+    display: flex;
+    justify-content: center;
   }
 
 }
