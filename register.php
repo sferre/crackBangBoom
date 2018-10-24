@@ -1,5 +1,45 @@
 <?php
 
+// $dsn = 'mysql:host=localhost;dbname=cbb';
+// $user = 'root';
+// $pass = 'root';
+// $opt= [ PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION ];
+
+// try{
+//     //me conecto a la BD
+//     $conex = new PDO($dsn, $user, $pass, $opt);
+//     $query = $conex->query('SELECT * FROM usuarios');
+//     $usuarios = $query->fetchAll(PDO::FETCH_ASSOC);
+//
+//   }catch( PDOException $ex ){
+//       // echo 'Error con la BD, contacta con el administrador del sistema';
+//       echo 'El error es:'. $ex->getMessage();
+//   }
+
+
+if($_POST){
+
+  $sqlinsert = 'INSERT INTO usuarios (nombre_completo, nombre_usuario, email_usuario, pais_nacimiento, pass_usuario) VALUES (:nombre_completo, :nombre_usuario, :email_usuario, :pais_nacimiento, :pass_usuario)';
+  $ins = $conex->prepare($sqlinsert);
+  $ins->bindValue(':nombre_completo', $_POST['NombreCompleto']);
+  $ins->bindValue(':nombre_usuario', $_POST['NombreUsuario']);
+  $ins->bindValue(':email_usuario', $_POST['Email']);
+  $ins->bindValue(':pais_nacimiento', $_POST['PaisNacimiento']);
+  //$ins->bindValue(':img_avatar', $_POST['Avatar']);
+  $ins->bindValue(':pass_usuario', $_POST['Password']);
+  $ins->execute();
+}
+
+var_dump($usuarios);
+
+  ?>
+
+
+
+<?php
+
+
+
 //Creamos las variables de los posibles errores
 $errorNombreCompleto = '';
 $errorUserName = '';
@@ -16,11 +56,11 @@ $tempCountry = '';
 $tempEmail = '';
 
 //Creamos un Array con algunos Usuarios de prueba
-$User = [
-	['NombreCompleto' => 'Marcos Cavanagh', 'NombreUsuario' => 'MarcosCav', 'PaisNacimiento' => 'AR', 'Email' => 'marcoscav@gmail.com', 'Avatar' => 'images/avatar.jpg', 'Password' => 'hola1234'],
-	['NombreCompleto' => 'Marcos C', 'NombreUsuario' => 'Cav', 'PaisNacimiento' => 'AL', 'Email' => 'marcoscav@gmil.com', 'Avatar' => 'images/av.jpg', 'Password' => 'h34'],
-	['NombreCompleto' => 'M Cavanagh', 'NombreUsuario' => 'Marcos', 'PaisNacimiento' => 'LR', 'Email' => 'marcoscav@gl.com', 'Avatar' => 'images/atar.jpg', 'Password' => 'h']
-];
+// $User = [
+// 	['NombreCompleto' => 'Marcos Cavanagh', 'NombreUsuario' => 'MarcosCav', 'PaisNacimiento' => 'AR', 'Email' => 'marcoscav@gmail.com', 'Avatar' => 'images/avatar.jpg', 'Password' => 'hola1234'],
+// 	['NombreCompleto' => 'Marcos C', 'NombreUsuario' => 'Cav', 'PaisNacimiento' => 'AL', 'Email' => 'marcoscav@gmil.com', 'Avatar' => 'images/av.jpg', 'Password' => 'h34'],
+// 	['NombreCompleto' => 'M Cavanagh', 'NombreUsuario' => 'Marcos', 'PaisNacimiento' => 'LR', 'Email' => 'marcoscav@gl.com', 'Avatar' => 'images/atar.jpg', 'Password' => 'h']
+// ];
 
 //Creamos un Array con todos los países ISO-3166-1 Alpha-2
 $Countries = ["Argentina", "Bolivia", "Chile", "Colombia", "Costa Rica", "Cuba", "Ecuador", "El Salvador", "España", "Estados Unidos", "Guatemala", "Guinea Ecuatorial", "Honduras", "México", "Nicaragua", "Panamá", "Paraguay", "Perú", "RepúblicaDominicana", "Uruguay", "Venezuela", "Otros Países", "Afganistán", "Albania", "Alemania", "Andorra", "Angola", "Anguilla", "Antártida", "Antigua y Barbuda", "Antillas Holandesas", "Arabia Saudí", "Argelia", "Armenia", "Aruba", "Australia", "Austria", "Azerbaiyán", "Bahamas", "Bahrein", "Bangladesh", "Barbados", "Bélgica", "Belice", "Benin", "Bermudas", "Bielorrusia", "Birmania", "Bosnia y Herzegovina", "Botswana", "Brasil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Bután", "Cabo Verde", "Camboya", "Camerún", "Canadá", "Chad", "China", "Chipre", "Ciudad del Vaticano", "Comores", "Congo", "Congo, República Democrática del", "Corea", "Corea del Norte", "Costa de Marfíl", "Costa Rica", "Croacia (Hrvatska)", "Dinamarca", "Djibouti", "Dominica", "Egipto", "Emiratos Árabes Unidos", "Eritrea", "Eslovenia", "Estonia", "Etiopía", "Fiji", "Filipinas", "Finlandia", "Francia", "Gabón", "Gambia", "Georgia", "Ghana", "Gibraltar", "Granada", "Grecia", "Groenlandia", "Guadalupe", "Guam", "Guayana", "Guayana Francesa", "Guinea", "Guinea-Bissau", "Haití", "Hungría", "India", "Indonesia", "Irak", "Irán", "Irlanda", "Isla Bouvet", "Isla de Christmas", "Islandia", "Islas Caimán", "Islas Cook", "Islas de Cocos o Keeling", "Islas Faroe", "Islas Heard y McDonald", "Islas Malvinas", "Islas Marianas del Norte", "Islas Marshall", "Islas menores de Estados Unidos", "Islas Palau", "Islas Salomón", "Islas Svalbard y Jan Mayen", "Islas Tokelau", "Islas Turks y Caicos", "Islas Vírgenes (EEUU)", "Islas Vírgenes (Reino Unido)", "Islas Wallis y Futuna", "Israel", "Italia", "Jamaica", "Japón", "Jordania", "Kazajistán", "Kenia", "Kirguizistán", "Kiribati", "Kuwait", "Laos", "Lesotho", "Letonia", "Líbano", "Liberia", "Libia", "Liechtenstein", "Lituania", "Luxemburgo", "Macedonia, Ex-República Yugoslava de", "Madagascar", "Malasia", "Malawi", "Maldivas", "Malí", "Malta", "Marruecos", "Martinica", "Mauricio", "Mauritania", "Mayotte", "Micronesia", "Moldavia", "Mónaco", "Mongolia", "Montserrat", "Mozambique", "Namibia", "Nauru", "Nepal", "Níger", "Nigeria", "Niue", "Norfolk", "Noruega", "Nueva Caledonia", "Nueva Zelanda", "Omán", "Países Bajos", "Papúa Nueva Guinea", "Paquistán", "Pitcairn", "Polinesia Francesa", "Polonia", "Portugal", "Puerto Rico", "Qatar", "Reino Unido", "República Centroafricana", "República Checa", "República de Sudáfrica", "República Eslovaca", "Reunión", "Ruanda", "Rumania", "Rusia", "Sahara Occidental", "Saint Kitts y Nevis", "Samoa", "Samoa Americana", "San Marino", "San Vicente y Granadinas", "Santa Helena", "Santa Lucía", "Santo Tomé y Príncipe", "Senegal", "Seychelles", "Sierra Leona", "Singapur", "Siria", "Somalia", "Sri Lanka", "St Pierre y Miquelon", "Suazilandia", "Sudán", "Suecia", "Suiza", "Surinam", "Tailandia", "Taiwán", "Tanzania", "Tayikistán", "Territorios franceses del Sur", "Timor Oriental", "Togo", "Tonga", "Trinidad y Tobago", "Túnez", "Turkmenistán", "Turquía", "Tuvalu", "Ucrania", "Uganda", "Uzbekistán", "Vanuatu", "Vietnam", "Yemen", "Yugoslavia", "Zambia", "Zimbabue"];
