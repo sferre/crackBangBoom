@@ -32,7 +32,7 @@
 
 <!-- ***** lupa ***** -->
     <div id="nav-search" class="">
-      <a href="#">
+      <a href="#" style="display:none;">
         <img src="images/icons/search.png" alt="search">
       </a>
     </div>
@@ -40,7 +40,7 @@
   </div>
 
   <!--NAV SECUNDARIO-->
-  <nav class="row justify-content-around nav2">
+  <nav class="row justify-content-around nav2" style="display:none;">
     <ul class="row btn-nav">
         <li class="col-4"><a href="#">Ranking</a></li>
         <li class="col-4"><a href="#">Populares</a></li>
@@ -50,6 +50,8 @@
 
 </header>
 
-<header class="bg-nav">
+<header class="bg-nav bg-nav-1"></header>
+
+<!-- <header class="bg-nav">
   <div class="bg-nav-1"></div>
-</header>
+</header> -->
