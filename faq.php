@@ -131,7 +131,7 @@
     					<h2>Cambie mi condicion fiscal ¿Que debo hacer?</h2>
     					<div>
     						<p>
-    							Deberás actualizar tu condición fiscal en la Sección Perfil > Datos de Facturación. Recordá adjuntar la documentación que te solicitaremos.
+    							Deberás actualizar tu condición fiscal en la Sección Perfil > Datos de Facturación. Recordá adjuntar la documentación que te solicitaremooooos.
     						</p>
     					</div>
     				</div>
