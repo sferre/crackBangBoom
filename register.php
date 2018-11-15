@@ -3,12 +3,27 @@
 require("autoload.php");
 //require("models/Validator_registrar.php");
 
+//Creamos las variables de los posibles errores
+$errorNombreCompleto = '';
+$errorUserName = '';
+$errorCountry ='';
+$errorEmail = '';
+$errorAvatar = '';
+$errorPassword = '';
+$errorPassword2 = '';
+
+//Creamos las variables de los valores temporales ante eventuales errores
+$tempNombreCompleto = '';
+$tempUserName = '';
+$tempCountry = '';
+$tempEmail = '';
+
 $errores = [];
 
 if($_POST) {
-	$errores = $validator->validarDatos($_POST, $bd);
+	$errores = $validator->validarDatos($_POST, $base);
 }
-
+var_dump($errores);
 //if {$tempNombreCompleto = $_POST["NombreCompleto"];
 //}
 
@@ -330,7 +345,7 @@ if($_POST) {
 
   				<label>E-Mail</label>
   				 <br>
-  					<input type="email" name="Email" value="<?php echo $tempEmail ?>">
+  					<input type="text" name="Email" value="<?php echo $tempEmail ?>">
   				 <br>
   				<label class="error"> <?php echo $errorEmail; ?> </label>
 
