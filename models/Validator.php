@@ -12,6 +12,7 @@ class Validator{
 
     if($data['NombreCompleto']== ""){
       $errores['NombreCompleto'] ="Bang! Este es un campo requerido";
+    } else {$tempNombreCompleto = $data['NombreCompleto'];
     }
 
     if(ctype_digit( substr($data['NombreCompleto'], 0, 1))){
@@ -21,7 +22,8 @@ class Validator{
     //Verificamos si el Nombre de Usuario es Válido
   	if(empty($data['NombreUsuario'])) {
   		$errores['NombreUsuario'] = 'Boom! Este es un campo requerido';
-  	}
+  	} else { $tempUserName = $_POST["NombreUsuario"];
+    }
 
     //Verificar si existe en la BD
 
@@ -53,11 +55,11 @@ class Validator{
 		}
 
 		if ($data["Password2"] == "") {
-			$this->errores["Password2"] = 'Bang! Este es un campo requerido';
+			$errores["Password2"] = 'Bang! Este es un campo requerido';
 		}
 
 		if ($data["Password"] !== $data["Password2"]) {
-			$errores["password2"] = 'Bang! Las contraseñas deben coincidir';
+			$errores["Password2"] = 'Bang! Las contraseñas deben coincidir';
 		}
 
     return $errores;

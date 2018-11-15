@@ -3,17 +3,8 @@
 require("autoload.php");
 //require("models/Validator_registrar.php");
 
-//Creamos las variables de los posibles errores
-$errorNombreCompleto = '';
-$errorUserName = '';
-$errorCountry ='';
-$errorEmail = '';
-$errorAvatar = '';
-$errorPassword = '';
-$errorPassword2 = '';
-
 //Creamos las variables de los valores temporales ante eventuales errores
-$tempNombreCompleto = '';
+$tempNombreCompleto = ''; //ver como hacer que mantenga las variables que estan bien
 $tempUserName = '';
 $tempCountry = '';
 $tempEmail = '';
@@ -87,14 +78,14 @@ var_dump($errores);
   				<br>
   					<input type="text" name="NombreCompleto" placeholder="Nombre y Apellido" autofocus value="<?php echo $tempNombreCompleto ?>">
   				<br>
-  				<label class="error">	<?php echo $errorNombreCompleto; ?> </label>
+  				<label class="error">	<?php echo $errores['NombreCompleto']; ?> </label><br>
 
 
   				<label>Nombre de Usuario</label>
   				<br>
   					<input type="text" name="NombreUsuario" value="<?php echo $tempUserName ?>">
   				<br>
-  				<label class="error">	<?php echo $errorUserName; ?>	</label>
+  				<label class="error">	<?php echo $errores['NombreUsuario']; ?>	</label><br>
 
 
   				<label>País de Nacimiento</label>
@@ -111,7 +102,7 @@ var_dump($errores);
   						<option value="Ecuador">Ecuador</option>
   						<option value="El Salvador">El Salvador</option>
   						<option value="España">España</option>
-  						<option value="Estados Unidos">Estados Unidos</option>
+  						<option value="Estadosp Unidos">Estados Unidos</option>
   						<option value="Guatemala">Guatemala</option>
   						<option value="Guinea Ecuatorial">Guinea Ecuatorial</option>
   						<option value="Honduras">Honduras</option>
@@ -339,36 +330,34 @@ var_dump($errores);
   						<option value="Zimbabue">Zimbabue</option>
   		      </datalist>
   				<br>
-  			  <label class="error"> <?php echo $errorCountry; ?> </label>
-  				<br>
-
+  			  <label class="error"> <?php echo $errores['PaisNacimiento']; ?> </label><br>
 
   				<label>E-Mail</label>
   				 <br>
   					<input type="text" name="Email" value="<?php echo $tempEmail ?>">
   				 <br>
-  				<label class="error"> <?php echo $errorEmail; ?> </label>
+  				<label class="error"> <?php echo $errores['Email']; ?> </label><br>
 
 
   				<label>Imagen de Perfil</label>
   				<br>
   					<input type="file" name="Avatar" placeholder="Elegí una Imagen">
   				<br>
-  				<label class="error"> <?php echo $errorAvatar; ?>	</label>
+  				<label class="error"> <?php echo $errorAvatar; ?>	</label><br>
 
 
   				<label>Constraseña</label>
   				<br>
   				 	<input type="password" name="Password" >
   				<br>
-  				<label class="error"> <?php echo $errorPassword; ?> </label>
+  				<label class="error"> <?php echo $errores["password"]; ?> </label><br>
 
 
   		    <label>Repetir Constraseña</label>
   				<br>
   				  <input type="password" name="Password2">
   				<br>
-  				<label class="error"> <?php echo $errorPassword2; ?> </label>
+  				<label class="error"> <?php echo $errores["Password2"]; ?> </label><br>
 
           <div class="">
             <button type="submit" class:"button">
