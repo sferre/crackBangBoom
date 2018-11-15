@@ -22,91 +22,80 @@
 <div class="row contenedor-columnas">
 
   <?php
-  //var_dump($_GET["id"]);
   $id = $_GET["id"];
-  //echo $id.'<br>';
-
-  //var_dump($novedades[0]['title']);
-  //echo $novedades[0]['title'];
-
-  // echo $novedades[$id]['title'];
-
-  // echo '<br>';
   ?>
 
   <div class="col-12 col-md-4 columna-a">
 
-        <!--- COLUMNA A -->
+    <!--- COLUMNA A -->
 
-        <div class="row main-info">
+    <div class="row main-info">
 
-            <div class="col-12 cover-item">
-                <img src="<?php echo $novedades[$id]['cover']; ?>" alt="">
-            </div>
-
-            <div class="col-12 d-md-none item-title">
-              <h1><?php echo $novedades[$id]['title']; ?></h1>
-            </div>
-            <div class="col-12 d-md-none item-subtitle">
-              <h2><?php echo $novedades[$id]['edition']; ?></h2>
-            </div>
-
-            <div class="col-12 item-price">
-              <h6><?php echo $novedades[$id]['price']; ?></h6>
-            </div>
-
-            <div class="col-12 buy-btn">
-              <button type="button" name="buy">COMPRAR</button>
-            </div>
-
-            <div class="col-12 item-wish ">
-
-                <a href="#">
-                  <img src="images/icons/wish-list.png" alt="">
-                </a>
-
-          </div>
+      <div class="col-12 cover-item">
+          <img src="<?php echo $novedades[$id]['cover']; ?>" alt="">
       </div>
 
-</div>
+      <div class="col-12 d-md-none item-title">
+        <h1><?php echo $novedades[$id]['title']; ?></h1>
+      </div>
+      <div class="col-12 d-md-none item-subtitle">
+        <h2><?php echo $novedades[$id]['edition']; ?></h2>
+      </div>
 
-<div class="col columna-b">
-  <!-- COLUMNA B -->
-<div class="row more-info">
+      <div class="col-12 item-price">
+        <h6><?php echo $novedades[$id]['price']; ?></h6>
+      </div>
 
+      <div class="col-12 buy-btn">
+        <button type="button" name="buy">COMPRAR</button>
+      </div>
 
-          <div class="row justify-content-center">
+      <div class="col-12 item-wish ">
 
-            <div class="col-12 d-none d-md-block item-title">
-              <h1><?php echo $novedades[$id]['title']; ?></h1>
-            </div>
+          <a href="#">
+            <img src="images/icons/wish-list.png" alt="">
+          </a>
 
-            <div class="col-12 d-none d-md-block item-subtitle">
-              <h2><?php echo $novedades[$id]['edition']; ?></h2>
-            </div>
+      </div>
+    </div>
+  </div>
 
-            <div class="col-12 item-description">
-              <h6>DESCRIPCIÓN:</h6>
-            </div>
-            <div class="col-12  item-resumen">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-          </div>
+  <div class="col columna-b">
+    <!-- COLUMNA B -->
+    <div class="row more-info">
 
-          <div class="row justify-content-start">
+      <div class="row justify-content-center">
 
-            <div class="col-xs-12 item-data">
-              <ul>
-                <li>EDITORIAL: Marvel</li>
-                <li>AÑO: 1989</li>
-                <li>AUTOR: George Perez</li>
-                <li>DIBUJANTE: George Perez</li>
-                <li>Genero: Superheroe</li>
-              </ul>
-            </div>
-          </div>
+        <div class="col-12 d-none d-md-block item-title">
+          <h1><?php echo $novedades[$id]['title']; ?></h1>
+        </div>
 
-</div>
+        <div class="col-12 d-none d-md-block item-subtitle">
+          <h2><?php echo $novedades[$id]['edition']; ?></h2>
+        </div>
+
+        <div class="col-12 item-description">
+          <h6>DESCRIPCIÓN:</h6>
+        </div>
+        <div class="col-12  item-resumen">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-start">
+
+        <div class="col-xs-12 item-data">
+          <ul>
+            <li>EDITORIAL: Marvel</li>
+            <li>AÑO: 1989</li>
+            <li>AUTOR: George Perez</li>
+            <li>DIBUJANTE: George Perez</li>
+            <li>Genero: Superheroe</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
 </div>
 
 
