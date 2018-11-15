@@ -3,17 +3,17 @@
 // -------------- Imagenes Index ---------------------- //
 
 $novedades =[
-  ['title'=>'Spider Man','edition'=>'ISSUE #310','price'=>'$45.50', 'cover'=>'./images/covers/spiderman-spectacular-310.jpg'],
-  ['title'=>'Stranger Things','edition'=>'ISSUE #10','price'=>'$10.99', 'cover'=>'./images/covers/stranger-things-1.jpg'],
-  ['title'=>'Saga','edition'=>'VOL.4','price'=>'$99.99', 'cover'=>'./images/covers/saga-vol8.jpg'],
-  ['title'=>'Wonder Woman','edition'=>'ISSUE #1','price'=>'$443.40', 'cover'=>'./images/covers/wonder-woman-1.jpg']
+  ['id'=>'0','title'=>'Spider Man','edition'=>'ISSUE #310','price'=>'$45.50', 'cover'=>'./images/covers/spiderman-spectacular-310.jpg'],
+  ['id'=>'1','title'=>'Stranger Things','edition'=>'ISSUE #10','price'=>'$10.99', 'cover'=>'./images/covers/stranger-things-1.jpg'],
+  ['id'=>'2','title'=>'Saga','edition'=>'VOL.4','price'=>'$99.99', 'cover'=>'./images/covers/saga-vol8.jpg'],
+  ['id'=>'3','title'=>'Wonder Woman','edition'=>'ISSUE #1','price'=>'$443.40', 'cover'=>'./images/covers/wonder-woman-1.jpg']
             ];
 
 $mangas =[
-  ['title'=>'Dragon Ball Z','edition'=>'VOL.1','price'=>'$200.00', 'cover'=>'./images/covers/dragonballz-1.jpg'],
-  ['title'=>'Death Note','edition'=>'VOL.4','price'=>'$87.99', 'cover'=>'./images/covers/death-note-5.jpg'],
-  ['title'=>'Sailor Moon','edition'=>'VOL.1','price'=>'$70.50', 'cover'=>'./images/covers/sailormoon-1.jpg'],
-  ['title'=>'One Piece','edition'=>'VOL.2','price'=>'$10.99', 'cover'=>'./images/covers/onepiece-vol2.png']
+  ['id'=>'4','title'=>'Dragon Ball Z','edition'=>'VOL.1','price'=>'$200.00', 'cover'=>'./images/covers/dragonballz-1.jpg'],
+  ['id'=>'5','title'=>'Death Note','edition'=>'VOL.4','price'=>'$87.99', 'cover'=>'./images/covers/death-note-5.jpg'],
+  ['id'=>'6','title'=>'Sailor Moon','edition'=>'VOL.1','price'=>'$70.50', 'cover'=>'./images/covers/sailormoon-1.jpg'],
+  ['id'=>'7','title'=>'One Piece','edition'=>'VOL.2','price'=>'$10.99', 'cover'=>'./images/covers/onepiece-vol2.png']
           ];
 
 $charactersMarvel =[

@@ -1,4 +1,7 @@
+<?php include('layout/comics.php'); ?>
+
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -18,23 +21,38 @@
 
 <div class="row contenedor-columnas">
 
+  <?php
+  //var_dump($_GET["id"]);
+  $id = $_GET["id"];
+  //echo $id.'<br>';
+
+  //var_dump($novedades[0]['title']);
+  //echo $novedades[0]['title'];
+
+  // echo $novedades[$id]['title'];
+
+  // echo '<br>';
+  ?>
+
   <div class="col-12 col-md-4 columna-a">
-<!--- COLUMNA A -->
+
+        <!--- COLUMNA A -->
+
         <div class="row main-info">
 
             <div class="col-12 cover-item">
-                <img src="./images/covers/wonder-woman-1.jpg" alt="">
+                <img src="<?php echo $novedades[$id]['cover']; ?>" alt="">
             </div>
 
             <div class="col-12 d-md-none item-title">
-              <h1>Wonder Woman</h1>
+              <h1><?php echo $novedades[$id]['title']; ?></h1>
             </div>
             <div class="col-12 d-md-none item-subtitle">
-              <h2>Vol.01</h2>
+              <h2><?php echo $novedades[$id]['edition']; ?></h2>
             </div>
 
             <div class="col-12 item-price">
-              <h6>$45,99</h6>
+              <h6><?php echo $novedades[$id]['price']; ?></h6>
             </div>
 
             <div class="col-12 buy-btn">
@@ -60,11 +78,11 @@
           <div class="row justify-content-center">
 
             <div class="col-12 d-none d-md-block item-title">
-              <h1>Wonder Woman</h1>
+              <h1><?php echo $novedades[$id]['title']; ?></h1>
             </div>
 
             <div class="col-12 d-none d-md-block item-subtitle">
-              <h2>Vol.01</h2>
+              <h2><?php echo $novedades[$id]['edition']; ?></h2>
             </div>
 
             <div class="col-12 item-description">
