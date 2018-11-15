@@ -47,13 +47,13 @@ class BD {
 
   //voy a usar el metodo treaerPorEmail para hacer el logueo y verificar si exite el email en la Base de Datos
   public function traerEmail($email){
-    $query = $this->conex->prepare('SELECT * FROM usuarios WHERE email = :email');
+    $query = $this->conex->prepare('SELECT * FROM usuarios WHERE email_usuario = :email');
     $query->bindValue(':email' , $email);
     $query->execute();
-    $query->fetch(PDO:FETCH_OBJ);
+    $usuario = $query->fetch(PDO::FETCH_OBJ);
     // si NO lo encuentra me devuelve false, si lo encuentra me trae datos
 
-    return $usuario
+    return $usuario;
     //me devuelve un objeto $usuario de clase standar.
     //ojo! este objeto es otra clase y no conoce los metodos de la clase User.php
   }

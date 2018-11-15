@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require("models/User.php");
 require("models/Validator.php");
 require("models/Authenticator.php");
@@ -10,3 +10,4 @@ require("models/BD.php");
 
 $validator = new Validator();
 $base = new BD();
+$auth = new Auth();
