@@ -12,7 +12,16 @@ $tempEmail = '';
 $errores = [];
 
 if($_POST) {
-	$errores = $validator->validarDatos($_POST, $base);
+		$errores = $validator->validarDatos($_POST, $base);
+
+	if(count($errores)==0){
+
+		$usuario = new User ($_POST['NombreCompleto'],$_POST['NombreUsuario'], $_POST['Email'],$_POST['PaisNacimiento'],$_POST['Password'],$_POST['Avatar']);
+
+		$usuario = $base->guardarUsuario($usuario);
+
+	}
+
 }
 var_dump($errores);
 //if {$tempNombreCompleto = $_POST["NombreCompleto"];
@@ -78,14 +87,14 @@ var_dump($errores);
   				<br>
   					<input type="text" name="NombreCompleto" placeholder="Nombre y Apellido" autofocus value="<?php echo $tempNombreCompleto ?>">
   				<br>
-  				<label class="error">	<?php echo $errores['NombreCompleto']; ?> </label><br>
+  				<label class="error">	<?php echo $errores['NombreCompleto']??''; ?> </label><br>
 
 
   				<label>Nombre de Usuario</label>
   				<br>
   					<input type="text" name="NombreUsuario" value="<?php echo $tempUserName ?>">
   				<br>
-  				<label class="error">	<?php echo $errores['NombreUsuario']; ?>	</label><br>
+  				<label class="error">	<?php echo $errores['NombreUsuario']??''; ?>	</label><br>
 
 
   				<label>País de Nacimiento</label>
@@ -330,34 +339,34 @@ var_dump($errores);
   						<option value="Zimbabue">Zimbabue</option>
   		      </datalist>
   				<br>
-  			  <label class="error"> <?php echo $errores['PaisNacimiento']; ?> </label><br>
+  			  <label class="error"> <?php echo $errores['PaisNacimiento']??''; ?> </label><br>
 
   				<label>E-Mail</label>
   				 <br>
   					<input type="text" name="Email" value="<?php echo $tempEmail ?>">
   				 <br>
-  				<label class="error"> <?php echo $errores['Email']; ?> </label><br>
+  				<label class="error"> <?php echo $errores['Email']??''; ?> </label><br>
 
 
   				<label>Imagen de Perfil</label>
   				<br>
   					<input type="file" name="Avatar" placeholder="Elegí una Imagen">
   				<br>
-  				<label class="error"> <?php echo $errorAvatar; ?>	</label><br>
+  				<label class="error"> <?php echo $errorAvatar ??''; ?>	</label><br>
 
 
   				<label>Constraseña</label>
   				<br>
   				 	<input type="password" name="Password" >
   				<br>
-  				<label class="error"> <?php echo $errores["password"]; ?> </label><br>
+  				<label class="error"> <?php echo $errores["password"]??''; ?> </label><br>
 
 
   		    <label>Repetir Constraseña</label>
   				<br>
   				  <input type="password" name="Password2">
   				<br>
-  				<label class="error"> <?php echo $errores["Password2"]; ?> </label><br>
+  				<label class="error"> <?php echo $errores["Password2"]??''; ?> </label><br>
 
           <div class="">
             <button type="submit" class:"button">

@@ -21,7 +21,7 @@ class BD {
       }
   }
 
-  public function guardarUsuario(Usuario $usuario){
+  public function guardarUsuario(User $usuario){
     $query = $this->conex->prepare('INSERT INTO usuarios(idusuarios,nombre_completo,nombre_usuario,email_usuario,pais_nacimiento,img_avatar,pass_usuario) VALUE (:idusuarios,:nombre_completo,:nombre_usuario,:email_usuario,:pais_nacimiento,:img_avatar,:pass_usuario)');
 
     $query->bindValue(':idusuarios', $usuario->getId());

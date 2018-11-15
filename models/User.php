@@ -14,7 +14,7 @@ class User {
   function __construct($nameUser,$nickUser,$emailUser,$countryUser,$passUser,$avatarUser='',$id = 'NULL') {
 
     if ($id == 'NULL') {
-      $this->pass = password_hass( $pass , PASSWORD_DEFAULT );
+      $this->passUser = password_hash( $passUser , PASSWORD_DEFAULT );
     } else {
       $this->passUser = $passUser;
     }
@@ -79,6 +79,10 @@ class User {
 
   public function setAvatarUser($avatarUser) {
     $this->avatarUser = $avatarUser;
+  }
+
+  public function setId($id) {
+    $this->id = $id;
   }
 
 }
