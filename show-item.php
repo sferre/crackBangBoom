@@ -30,7 +30,7 @@
   // var_dump($seccion);
 
   $id = $_GET["id"];
-  var_dump($id);
+  //var_dump($id);
 
   function section($data) {
 
