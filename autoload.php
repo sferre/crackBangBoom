@@ -9,3 +9,4 @@ require("models/BD.php");
 require("models/User-Inscript.php");
 
 $validator = new Validator();
+$base = new BD();
