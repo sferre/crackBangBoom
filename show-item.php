@@ -1,4 +1,38 @@
-<?php include('layout/comics.php'); ?>
+<?php
+
+//var_dump($seccion);
+
+$seccion = $_GET["seccion"];
+// var_dump($seccion);
+
+$id = $_GET["id"];
+//var_dump($id);
+
+//echo $mangas[$id]['title'];
+
+function section($data) {
+
+  include('layout/comics.php');
+
+  $id = $_GET["id"];
+  $seccion = $_GET["seccion"];
+
+  //var_dump($id);
+
+  switch ($seccion) {
+    case 'novedades':
+      return $novedades[$id][$data];
+      break;
+
+    case 'mangas':
+      return $mangas[$id][$data];
+      break;
+  }
+}
+
+//var_dump( section('title') );
+
+?>
 
 <!DOCTYPE html>
 
@@ -21,42 +55,6 @@
     <div class="container-fluid">
 
 <div class="row contenedor-columnas">
-
-  <?php
-
-  //var_dump($seccion);
-
-  $seccion = $_GET["seccion"];
-  // var_dump($seccion);
-
-  $id = $_GET["id"];
-  //var_dump($id);
-
-  //echo $mangas[$id]['title'];
-
-  function section($data) {
-
-    include('layout/comics.php');
-
-    $id = $_GET["id"];
-    $seccion = $_GET["seccion"];
-
-    //var_dump($id);
-
-    switch ($seccion) {
-      case 'novedades':
-        return $novedades[$id][$data];
-        break;
-
-      case 'mangas':
-        return $mangas[$id][$data];
-        break;
-    }
-  }
-
-  //var_dump( section('title') );
-
-  ?>
 
   <div class="col-12 col-md-4 columna-a">
 
