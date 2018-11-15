@@ -15,6 +15,9 @@ $tempUserName = '';
 $tempCountry = '';
 $tempEmail = '';
 
+//Creamos un Array con todos los países ISO-3166-1 Alpha-2
+$Countries = ["Argentina", "Bolivia", "Chile", "Colombia", "Costa Rica", "Cuba", "Ecuador", "El Salvador", "España", "Estados Unidos", "Guatemala", "Guinea Ecuatorial", "Honduras", "México", "Nicaragua", "Panamá", "Paraguay", "Perú", "RepúblicaDominicana", "Uruguay", "Venezuela", "Otros Países", "Afganistán", "Albania", "Alemania", "Andorra", "Angola", "Anguilla", "Antártida", "Antigua y Barbuda", "Antillas Holandesas", "Arabia Saudí", "Argelia", "Armenia", "Aruba", "Australia", "Austria", "Azerbaiyán", "Bahamas", "Bahrein", "Bangladesh", "Barbados", "Bélgica", "Belice", "Benin", "Bermudas", "Bielorrusia", "Birmania", "Bosnia y Herzegovina", "Botswana", "Brasil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Bután", "Cabo Verde", "Camboya", "Camerún", "Canadá", "Chad", "China", "Chipre", "Ciudad del Vaticano", "Comores", "Congo", "Congo, República Democrática del", "Corea", "Corea del Norte", "Costa de Marfíl", "Costa Rica", "Croacia (Hrvatska)", "Dinamarca", "Djibouti", "Dominica", "Egipto", "Emiratos Árabes Unidos", "Eritrea", "Eslovenia", "Estonia", "Etiopía", "Fiji", "Filipinas", "Finlandia", "Francia", "Gabón", "Gambia", "Georgia", "Ghana", "Gibraltar", "Granada", "Grecia", "Groenlandia", "Guadalupe", "Guam", "Guayana", "Guayana Francesa", "Guinea", "Guinea-Bissau", "Haití", "Hungría", "India", "Indonesia", "Irak", "Irán", "Irlanda", "Isla Bouvet", "Isla de Christmas", "Islandia", "Islas Caimán", "Islas Cook", "Islas de Cocos o Keeling", "Islas Faroe", "Islas Heard y McDonald", "Islas Malvinas", "Islas Marianas del Norte", "Islas Marshall", "Islas menores de Estados Unidos", "Islas Palau", "Islas Salomón", "Islas Svalbard y Jan Mayen", "Islas Tokelau", "Islas Turks y Caicos", "Islas Vírgenes (EEUU)", "Islas Vírgenes (Reino Unido)", "Islas Wallis y Futuna", "Israel", "Italia", "Jamaica", "Japón", "Jordania", "Kazajistán", "Kenia", "Kirguizistán", "Kiribati", "Kuwait", "Laos", "Lesotho", "Letonia", "Líbano", "Liberia", "Libia", "Liechtenstein", "Lituania", "Luxemburgo", "Macedonia, Ex-República Yugoslava de", "Madagascar", "Malasia", "Malawi", "Maldivas", "Malí", "Malta", "Marruecos", "Martinica", "Mauricio", "Mauritania", "Mayotte", "Micronesia", "Moldavia", "Mónaco", "Mongolia", "Montserrat", "Mozambique", "Namibia", "Nauru", "Nepal", "Níger", "Nigeria", "Niue", "Norfolk", "Noruega", "Nueva Caledonia", "Nueva Zelanda", "Omán", "Países Bajos", "Papúa Nueva Guinea", "Paquistán", "Pitcairn", "Polinesia Francesa", "Polonia", "Portugal", "Puerto Rico", "Qatar", "Reino Unido", "República Centroafricana", "República Checa", "República de Sudáfrica", "República Eslovaca", "Reunión", "Ruanda", "Rumania", "Rusia", "Sahara Occidental", "Saint Kitts y Nevis", "Samoa", "Samoa Americana", "San Marino", "San Vicente y Granadinas", "Santa Helena", "Santa Lucía", "Santo Tomé y Príncipe", "Senegal", "Seychelles", "Sierra Leona", "Singapur", "Siria", "Somalia", "Sri Lanka", "St Pierre y Miquelon", "Suazilandia", "Sudán", "Suecia", "Suiza", "Surinam", "Tailandia", "Taiwán", "Tanzania", "Tayikistán", "Territorios franceses del Sur", "Timor Oriental", "Togo", "Tonga", "Trinidad y Tobago", "Túnez", "Turkmenistán", "Turquía", "Tuvalu", "Ucrania", "Uganda", "Uzbekistán", "Vanuatu", "Vietnam", "Yemen", "Yugoslavia", "Zambia", "Zimbabue"];
+
 //Empezamos con las Validaciones si existe info vía POST
 if ($_POST){
 
@@ -30,22 +33,16 @@ if ($_POST){
   		$errorNombreCompleto = 'Bang! Este es un campo requerido';
   	  }
   	if (ctype_digit( substr($_POST["NombreCompleto"], 0, 1))){
-  		$errorNombreCompleto = 'Si tu Nombre realmente empieza con un Número por favor inserta una A al inicio';
+  		$errorNombreCompleto = 'No eres un Robot, tu Nombre no puede empezar con un número';
   	} else { $tempNombreCompleto = $_POST["NombreCompleto"];
   	}
 
-  	//Verificamos si el Nombre de Usuario es Válido y/o si Existe en nuestra BDD (Array)
+  	//Verificamos si el Nombre de Usuario es Válido
   	if(empty($_POST["NombreUsuario"])) {
   		$errorUserName = 'Boom! Este es un campo requerido';
   	} else { $tempUserName = $_POST["NombreUsuario"];
   	}
-  	//Verificamos si existe un Usuario con ese nombre en nuestra BDD (Array)
-  	for ($i=0; $i<count($User); $i++) {
-  	    if (in_array($_POST["NombreUsuario"], $User[$i])) {
-  	        $errorUserName = 'Bang! Este Usuario ya existe';
-  	    }
-  	}
-
+    
   	//Verificamos si el País seleccionado es válido y está en nuestro Array $Countries
   	if(in_array($_POST["PaisNacimiento"], $Countries) == "") {
   		$errorCountry = 'Boom! Por favor selecciona un país de la lista';
@@ -61,13 +58,6 @@ if ($_POST){
   		$errorEmail = 'Bang! Este es un campo requerido';
   		}
 
-  	//Verificamos si el Email ya existe	en nuestra BBD (Array)
-  	for ($i=0; $i<count($User); $i++) {
-  	    if (in_array($_POST["Email"], $User[$i])) {
-  	        $errorEmail = 'Bang! Este Email ya esta registrado';
-  	    }
-  	}
-
   	//Verificamos si el formato de la imagen es el adecuado
   	//var_dump($_FILES);
   	if($_FILES["Avatar"]["error"] === 0 ) {
@@ -80,7 +70,7 @@ if ($_POST){
       }
     }
 
-  	//Verificamso si la contraseñe tiene al menos 8 dígitos
+  	//Verificamso si la contraseña tiene al menos 8 dígitos
   	if(strlen($_POST['Password'])<8){
   		$errorPassword = 'Boom! Tu constraseña debe tener al menos 8 caracteres';
   	}
@@ -95,7 +85,5 @@ if ($_POST){
   	if($_POST['Password']!==$_POST['Password2']) {
   		$errorPassword2 = 'Bang! Las contraseñas deben coincidir';
   	}
-
-   //$User = new User( $_POST['NombreCompleto'], $_POST['NombreUsuario'], $_POST['PaisNacimiento'], $_POST['Email'], $_POST['Avatar'], $_POST['Password']);
 
 }
