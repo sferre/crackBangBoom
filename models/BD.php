@@ -58,9 +58,11 @@ class BD {
     //ojo! este objeto es otra clase y no conoce los metodos de la clase User.php
   }
 
-
-
-
+  public function traerTodosUsuarios(){
+    $query = $this->conex->query('SELECT * FROM usuarios ');
+    $usuarios = $query->fetchAll(PDO::FETCH_OBJ);
+    return $usuarios;
+  }
 
 
 }
