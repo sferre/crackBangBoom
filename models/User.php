@@ -76,7 +76,7 @@ class User {
     $this->passUser = $passUser;
   }
 
-  apublic function setAvatarUser($avatarUser) {
+  public function setAvatarUser($avatarUser) {
     $this->avatarUser = $avatarUser;
   }
 

@@ -7,7 +7,7 @@ class Validator{
 
   private $errores =[];
 
-  public function validarDatos($data, BD $bd){
+  public function validarDatos($data, BD $base){
 
     if($data['NombreCompleto']== ""){
       $this->errores['NombreCompleto'] ="Bang! Este es un campo requerido";
@@ -38,9 +38,9 @@ class Validator{
   		$this->errores['Email'] = 'Bang! Este es un campo requerido';
   		}
 
-    //if($bd->traerPorMail($data['Email']) != NULL){
-      //$this->errores['Email'] = "Este mail ya se encuentra registrado"
-    //}
+  //  if($base->traerPorMail($data['Email']) != NULL){
+  //    $this->errores['Email'] = "Este mail ya se encuentra registrado"
+  //  }
 
     //Verificamos si la password es válida
     if (empty($data["Password"])) {

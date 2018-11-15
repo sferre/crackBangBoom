@@ -9,21 +9,21 @@ if($_POST) {
 	$errores = $validator->validarDatos($_POST, $bd);
 }
 
-if {$tempNombreCompleto = $_POST["NombreCompleto"];
-}
+//if {$tempNombreCompleto = $_POST["NombreCompleto"];
+//}
 
-else { $tempUserName = $_POST["NombreUsuario"];
-}
+//else { $tempUserName = $_POST["NombreUsuario"];
+//}
 
-else { $tempCountry = $_POST["PaisNacimiento"];
-}
+//else { $tempCountry = $_POST["PaisNacimiento"];
+//}
 
-else { $tempEmail = $_POST['Email'];
-}
+//else { $tempEmail = $_POST['Email'];
+//}
 
-else{
-	$errorAvatar = 'Boom! Los formatos válidos son .jpg, .png y .svg';
-}
+//else{
+	//$errorAvatar = 'Boom! Los formatos válidos son .jpg, .png y .svg';
+//}
 
 ?>
 
