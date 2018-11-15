@@ -3,8 +3,8 @@
 class BD {
 
   private $dsn = 'mysql:host=localhost;dbname=cbb';
-  private $user = 'marcos';
-  private $pass = '123456';
+  private $user = 'root';
+  private $pass = 'root';
   private $opt= [ PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION ];
   private $conex;
 

@@ -4,25 +4,26 @@
 class User {
 
   private   $id;
-  protected $idUser;
   protected $nameUser;
   protected $nickUser;
   protected $emailUser;
-  protected $birthUser;
+  protected $countryUser;
+  protected $avatarUser;
   protected $passUser;
 
-  function __construct($nameUser,$nickUser,$emailUser,$birthUser,$passUser,$id = 'NULL') {
+  function __construct($nameUser,$nickUser,$emailUser,$countryUser,$passUser,$avatarUser='',$id = 'NULL') {
 
     if ($id == 'NULL') {
       $this->pass = password_hass( $pass , PASSWORD_DEFAULT );
     } else {
       $this->passUser = $passUser;
     }
-    
+
     $this->nameUser = $nameUser;
     $this->nickUser = $nickUser;
     $this->emailUser = $emailUser;
-    $this->birthUser = $birthUser;
+    $this->countryUser = $countryUser;
+    $this->avatarUser = $avatarUser;
     }
 
   //GET
@@ -42,12 +43,16 @@ class User {
     return $this->emailUser;
   }
 
-  public function getBirthUser() {
-    return $this->birthUser;
+  public function getCountryUser() {
+    return $this->countryUser;
   }
 
   public function getPassUser() {
-    return $this->birthUser;
+    return $this->passUser;
+  }
+
+  public function getAvatarUser() {
+    return $this->avatarUser;
   }
 
   //SET
@@ -63,14 +68,17 @@ class User {
     $this->emailUser = $emailUser;
   }
 
-  public function setBirthUser($birthUser) {
-    $this->birthUser = $birthUser;
+  public function setCountryUser($countryUser) {
+    $this->countryUser = $countryUser;
   }
 
-  public function setPassUser($birthUser) {
-    $this->birthUser = $birthUser;
+  public function setPassUser($passUser) {
+    $this->passUser = $passUser;
   }
 
+  apublic function setAvatarUser($avatarUser) {
+    $this->avatarUser = $avatarUser;
+  }
 
 }
 

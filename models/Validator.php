@@ -15,35 +15,32 @@ class Validator{
 
     if(ctype_digit( substr($data['NombreCompleto'], 0, 1))){
       $this->errores['NombreCompleto'] ='No eres un Robot, tu Nombre no puede empezar con un número';
-  	} else { $tempNombreCompleto = $_POST["NombreCompleto"];
-    }
+  	}
 
     //Verificamos si el Nombre de Usuario es Válido
   	if(empty($data['NombreUsuario'])) {
   		$this->errores['NombreUsuario'] = 'Boom! Este es un campo requerido';
-  	} else { $tempUserName = $_POST["NombreUsuario"];
   	}
+
     //Verificar si existe en la BD
 
     //Verificamos si el País seleccionado es válido y está en nuestro Array $Countries
     if(in_array($data['PaisNacimiento'], $Countries) == "") {
       $this->errores['PaisNacimiento'] = 'Boom! Por favor selecciona un país de la lista';
-    } else { $tempCountry = $_POST["PaisNacimiento"];
     }
 
     //Verificamos si el Email es válido
   	if (filter_var($data['Email'] , FILTER_VALIDATE_EMAIL )===false) {
       $errorEmail = 'Bang! El Correo es inválido';
-  	} else { $tempEmail = $_POST['Email'];
   	}
 
   	if(empty($data["Email"])) {
   		$this->errores['Email'] = 'Bang! Este es un campo requerido';
   		}
 
-    if($db->traerPorMail($data['Email']) != NULL){
-      $this->errores['Email'] = "Este mail ya se encuentra registrado"
-    }
+    //if($bd->traerPorMail($data['Email']) != NULL){
+      //$this->errores['Email'] = "Este mail ya se encuentra registrado"
+    //}
 
     //Verificamos si la password es válida
     if (empty($data["Password"])) {
@@ -71,16 +68,12 @@ class Validator{
 
 }
 
-
-
     //Verificamos si el formato de la imagen es el adecuado
     //var_dump($_FILES);
-    if($_FILES["Avatar"]["error"] === 0 ) {
+    if(isset($_FILES["Avatar"]) && $_FILES["Avatar"]["error"] === 0 ) {
       $ex = pathinfo($_FILES["Avatar"]["name"], PATHINFO_EXTENSION);
       if( $ex == "jpg" || $ex == "png" || $ex == "svg"){
         if (!is_dir('avatars') ) mkdir('avatars');
         move_uploaded_file($_FILES['Avatar']['tmp_name'], 'avatars/'.$_POST['NombreUsuario'].'.'.$ex);
-      }else{
-        $errorAvatar = 'Boom! Los formatos válidos son .jpg, .png y .svg';
       }
     }
