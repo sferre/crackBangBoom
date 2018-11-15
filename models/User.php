@@ -3,22 +3,27 @@
 
 class User {
 
-  private $idUser;
-  private $nameUser;
-  private $nickUser;
-  private $emailUser;
-  private $birthUser;
-  private $passUser;
+  private   $id;
+  protected $idUser;
+  protected $nameUser;
+  protected $nickUser;
+  protected $emailUser;
+  protected $birthUser;
+  protected $passUser;
 
-  function __construct($nameUser,$nickUser,$emailUser,$birthUser,$passUser) {
+  function __construct($nameUser,$nickUser,$emailUser,$birthUser,$passUser,$id = 'NULL') {
 
+    if ($id == 'NULL') {
+      $this->pass = password_hass( $pass , PASSWORD_DEFAULT );
+    } else {
+      $this->passUser = $passUser;
+    }
+    
     $this->nameUser = $nameUser;
     $this->nickUser = $nickUser;
     $this->emailUser = $emailUser;
     $this->birthUser = $birthUser;
-    $this->passUser = $passUser;
-
-  }
+    }
 
   //GET
   public function getId() {
