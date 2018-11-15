@@ -6,7 +6,7 @@ foreach ($novedades as $novedad) {
 
 <div class="item">
 
-  <a href="show-item.php?id=<?php echo $novedad['id']; ?>">
+  <a href="show-item.php?seccion=novedades&id=<?php echo $novedad['id'];?>">
 <!-- ***** Portada Comic ***** -->
     <div class="cover">
       <img src="<?php echo $novedad['cover']; ?>" alt="">

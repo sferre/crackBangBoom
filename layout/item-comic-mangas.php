@@ -2,12 +2,12 @@
 
 <?php
 foreach ($mangas as $manga) {
-
- ?>
+?>
 
 <div class="item">
 
-  <a>
+  <a href="show-item.php?seccion=mangas&id=<?php echo $manga['id']; ?>">
+    <?php echo $manga['id']; ?>
 <!-- ***** Portada Comic ***** -->
     <div class="cover">
       <img src="<?php echo $manga['cover']; ?>" alt="">

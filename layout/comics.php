@@ -10,10 +10,10 @@ $novedades =[
             ];
 
 $mangas =[
-  ['id'=>'4','title'=>'Dragon Ball Z','edition'=>'VOL.1','price'=>'$200.00', 'cover'=>'./images/covers/dragonballz-1.jpg'],
-  ['id'=>'5','title'=>'Death Note','edition'=>'VOL.4','price'=>'$87.99', 'cover'=>'./images/covers/death-note-5.jpg'],
-  ['id'=>'6','title'=>'Sailor Moon','edition'=>'VOL.1','price'=>'$70.50', 'cover'=>'./images/covers/sailormoon-1.jpg'],
-  ['id'=>'7','title'=>'One Piece','edition'=>'VOL.2','price'=>'$10.99', 'cover'=>'./images/covers/onepiece-vol2.png']
+  ['id'=>'0','title'=>'Dragon Ball Z','edition'=>'VOL.1','price'=>'$200.00', 'cover'=>'./images/covers/dragonballz-1.jpg'],
+  ['id'=>'1','title'=>'Death Note','edition'=>'VOL.4','price'=>'$87.99', 'cover'=>'./images/covers/death-note-5.jpg'],
+  ['id'=>'2','title'=>'Sailor Moon','edition'=>'VOL.1','price'=>'$70.50', 'cover'=>'./images/covers/sailormoon-1.jpg'],
+  ['id'=>'3','title'=>'One Piece','edition'=>'VOL.2','price'=>'$10.99', 'cover'=>'./images/covers/onepiece-vol2.png']
           ];
 
 $charactersMarvel =[

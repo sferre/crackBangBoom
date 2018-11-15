@@ -1,4 +1,4 @@
-<?php include('layout/comics.php'); ?>
+<?php //include('layout/comics.php'); ?>
 
 <!DOCTYPE html>
 
@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/show-item.css">
     <title>Crack Bang Boom!</title>
   </head>
+
   <body>
     <div id="desktop-container">
       <!--HEADER-->
@@ -22,7 +23,35 @@
 <div class="row contenedor-columnas">
 
   <?php
+
+  //var_dump($seccion);
+
+  // $seccion = $_GET["seccion"];
+  // var_dump($seccion);
+
   $id = $_GET["id"];
+  var_dump($id);
+
+  function section($data) {
+
+    include('layout/comics.php');
+
+    $id = $_GET["id"];
+    $seccion = $_GET["seccion"];
+
+    switch ($seccion) {
+      case 'novedades':
+        return $novedades[$id][$data];
+        break;
+
+      case 'mangas':
+        return $mangas[$id][$data];
+        break;
+    }
+  }
+
+  //var_dump( section('title') );
+
   ?>
 
   <div class="col-12 col-md-4 columna-a">
@@ -32,18 +61,18 @@
     <div class="row main-info">
 
       <div class="col-12 cover-item">
-          <img src="<?php echo $novedades[$id]['cover']; ?>" alt="">
+        <img src="<?php echo section('cover'); ?>" alt="">
       </div>
 
       <div class="col-12 d-md-none item-title">
-        <h1><?php echo $novedades[$id]['title']; ?></h1>
+        <h1><?php echo section('title'); ?></h1>
       </div>
       <div class="col-12 d-md-none item-subtitle">
-        <h2><?php echo $novedades[$id]['edition']; ?></h2>
+        <h2><?php echo section('edition'); ?></h2>
       </div>
 
       <div class="col-12 item-price">
-        <h6><?php echo $novedades[$id]['price']; ?></h6>
+        <h6><?php echo section('price'); ?></h6>
       </div>
 
       <div class="col-12 buy-btn">
@@ -67,11 +96,11 @@
       <div class="row justify-content-center">
 
         <div class="col-12 d-none d-md-block item-title">
-          <h1><?php echo $novedades[$id]['title']; ?></h1>
+          <h1><?php echo section('title'); ?></h1>
         </div>
 
         <div class="col-12 d-none d-md-block item-subtitle">
-          <h2><?php echo $novedades[$id]['edition']; ?></h2>
+          <h2><?php echo section('edition'); ?></h2>
         </div>
 
         <div class="col-12 item-description">
