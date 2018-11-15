@@ -47,13 +47,14 @@ class User {
     return $this->countryUser;
   }
 
+  public function getAvatarUser() {
+    return $this->avatarUser;
+  }
+
   public function getPassUser() {
     return $this->passUser;
   }
 
-  public function getAvatarUser() {
-    return $this->avatarUser;
-  }
 
   //SET
   public function setNameUser($nameUser) {

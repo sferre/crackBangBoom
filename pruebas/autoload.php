@@ -6,5 +6,6 @@ require("BD.php");
 require("validator.php");
 
 $base = new BD();
+
 $auth = new Auth();
 $validator = new Validator();

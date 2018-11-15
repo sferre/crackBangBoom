@@ -1,5 +1,6 @@
 <?php
 
+
 class BD {
 
   private $dsn = 'mysql:host=localhost;dbname=usuarios';
@@ -53,7 +54,6 @@ public function traerTodos(){
  $query = $this->conex->query("SELECT * FROM usuarios");
  $usuarios = $query->fetchAll(PDO::FETCH_OBJ);
  return $usuarios;
-
 }
 
 }
