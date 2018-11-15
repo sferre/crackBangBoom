@@ -3,8 +3,8 @@
 class BD {
 
   private $dsn = 'mysql:host=localhost;dbname=cbb';
-  private $user = 'root';
-  private $pass = 'root';
+  private $user = 'marcos';
+  private $pass = '123456';
   private $opt= [ PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION ];
   private $conex;
 
@@ -57,6 +57,18 @@ class BD {
     //me devuelve un objeto $usuario de clase standar.
     //ojo! este objeto es otra clase y no conoce los metodos de la clase User.php
   }
+
+  ///voy a usar el metodo treaerPorUsuario para hacer el logueo y verificar si exite el usuario en la Base de Datos
+  public function traerUsername($nickUser){
+    $query = $this->conex->prepare('SELECT * FROM usuarios WHERE nombre_usuario = :nickUser');
+    $query->bindValue(':nickUser' , $nickUser);
+    $query->execute();
+    $user_Name = $query->fetch(PDO::FETCH_OBJ);
+    // si NO lo encuentra me devuelve false, si lo encuentra me trae datos
+
+    return $user_Name;
+  }
+
 
   public function traerTodosUsuarios(){
     $query = $this->conex->query('SELECT * FROM usuarios ');

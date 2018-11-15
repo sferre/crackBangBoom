@@ -47,6 +47,9 @@ class Validator{
     }
 
     //Verificar si existe en la BD
+    if($base->traerUsername($data['NombreUsuario']) != NULL) {
+     $errores['NombreUsuario'] = "Crack! Este Usuario ya se encuentra registrado";
+    }
 
     //Verificamos si el País seleccionado es válido y está en nuestro Array $Countries
     if(in_array($data['PaisNacimiento'], $this->Countries) == "") {
@@ -62,9 +65,9 @@ class Validator{
   		$errores['Email'] = 'Bang! Este es un campo requerido';
   		}
 
-  //  if($base->traerPorMail($data['Email']) != NULL){
-  //    $this->errores['Email'] = "Este mail ya se encuentra registrado"
-  //  }
+    if($base->traerEmail($data['Email']) != NULL){
+     $errores['Email'] = "Crack! Este mail ya se encuentra registrado";
+   }
 
     //Verificamos si la password es válida
     if (empty($data["Password"])) {
