@@ -7,6 +7,15 @@ class Validator{
 
   private $errores =[];
 
+   public function validarLogin($data, BD $bd)
+  {
+    if ($data['Email'] && $data['Password']== "") {
+      $errores['Email'] ='Completar todos los campos!';
+    } else {
+      $usuario = $bd->traerEmail($data['Email']);
+    }
+  }
+
   public function validarDatos($data, BD $bd){
 
     if($data['NombreCompleto']== ""){

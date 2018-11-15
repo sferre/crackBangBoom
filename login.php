@@ -1,7 +1,24 @@
 <?php
 
 require("autoload.php");
-require("models/Validator_login.php");
+
+//si estoy logueado me redirige al Index.php
+if ($auth->estoyLogueado()) {
+  header('Location:index.php');
+  exit;
+}
+
+if($_POST){
+  $errores = $validator->validarLogin($_POST, $base);
+  var_dump($errores);
+  if (!$errores) {
+   $auth->loguear($_POST['Email']);
+  }
+}
+
+
+var_dump($_SESSION);
+
 
 ?>
 
@@ -30,7 +47,7 @@ require("models/Validator_login.php");
 
     <div class="container-fluid contact-principal">
 
-			<form class="contact-form" action="<?php echo $action; ?>" method="post" id="login">
+			<form class="contact-form" action="" method="post" id="login">
 
 					<!--Titulo -->
 	        <div class="row titulo-contact">
@@ -42,9 +59,9 @@ require("models/Validator_login.php");
 					<!--Datos del Formulario -->
 					<label>Nombre de Usuario:</label>
 						<br>
-							<input type="text" name="NombreUsuario" value="<?php echo $tempUserName ?>">
+							<input type="text" name="Email" value="<?php echo '' ?>">
 						<br>
-					<label class="error"><?php echo $errorUserName; ?></label>
+					<label class="error"><?php echo $errores['Email']??""; ?></label>
 					<br>
 
 
@@ -52,7 +69,7 @@ require("models/Validator_login.php");
 						<br>
 					    <input type="password" name="Password" >
 						<br>
-					<label class="error"><?php echo $errorPassword; ?></label>
+					<label class="error"><?php echo $errorPassword??""; ?></label>
 					<br>
 
 					<button type="submit" class:"btn-first">

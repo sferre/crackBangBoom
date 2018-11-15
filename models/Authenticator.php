@@ -10,7 +10,7 @@ class Auth {
 
   //cookie que guardo del lado del navegador para que me recuerde
   public function recuerdame(){
-    set_cookie('logueado', $email, time()+3600*24*30);
+    setcookie('logueado', $email, time()+3600*24*30);
     //guardo la cookie por un mes
   }
 
@@ -22,23 +22,19 @@ class Auth {
 
   //
   public function logout(){
-    set_cookie('logueado', NULL, time()-1);
+    setcookie('logueado', NULL, time()-1);
     // destruyo la cookie donde se guarda la session
     session_destroy();
     //lo uso cuando le dan click a logout
   }
 
-
-
-
-
-
+  public function usuarioLogueado($base){
+    if($this->estoyLogueado()){
+        $base->traerEmail($_SESSION['logueado']);
+        return $loguado;
+    } else {
+      return NULL;
+    }
+  }
 
 }
-
-
-
-
-
-
- ?>
