@@ -4,15 +4,28 @@ require("autoload.php");
 //require("models/Validator_registrar.php");
 
 //Creamos las variables de los valores temporales ante eventuales errores
-$tempNombreCompleto = ''; //ver como hacer que mantenga las variables que estan bien
+$tempNombreCompleto = '';
 $tempUserName = '';
 $tempCountry = '';
 $tempEmail = '';
 
 $errores = [];
 
+
 if($_POST) {
 		$errores = $validator->validarDatos($_POST, $base);
+
+		if(!isset($errores['NombreCompleto'])) {$tempNombreCompleto = $_POST["NombreCompleto"];
+		}
+
+		if(!isset($errores['NombreUsuario'])) {$tempUserName = $_POST["NombreUsuario"];
+		}
+
+		if(!isset($errores['PaisNacimiento'])) {$tempCountry = $_POST["PaisNacimiento"];
+		}
+
+		if(!isset($errores['Email'])) {$tempEmail = $_POST['Email'];
+		}
 
 	if(count($errores)==0){
 
@@ -23,9 +36,17 @@ if($_POST) {
 	}
 
 }
-var_dump($errores);
-//if {$tempNombreCompleto = $_POST["NombreCompleto"];
-//}
+//var_dump($errores);
+
+	if(isset($_FILES["Avatar"]) && $_FILES["Avatar"]["error"] === 0 ) {
+		$ex = pathinfo($_FILES["Avatar"]["name"], PATHINFO_EXTENSION);
+			if( $ex == "jpg" || $ex == "png" || $ex == "svg"){
+				if (!is_dir('avatars') ) mkdir('avatars');
+			move_uploaded_file($_FILES['Avatar']['tmp_name'], 'avatars/'.$_POST['NombreUsuario'].'.'.$ex);
+		} else {
+				$errores["Avatar"] = 'Boom! Los formatos válidos son .jpg, .png y .svg';
+				}
+	}
 
 //else { $tempUserName = $_POST["NombreUsuario"];
 //}
@@ -111,7 +132,7 @@ var_dump($errores);
   						<option value="Ecuador">Ecuador</option>
   						<option value="El Salvador">El Salvador</option>
   						<option value="España">España</option>
-  						<option value="Estadosp Unidos">Estados Unidos</option>
+  						<option value="Estados Unidos">Estados Unidos</option>
   						<option value="Guatemala">Guatemala</option>
   						<option value="Guinea Ecuatorial">Guinea Ecuatorial</option>
   						<option value="Honduras">Honduras</option>
@@ -352,7 +373,7 @@ var_dump($errores);
   				<br>
   					<input type="file" name="Avatar" placeholder="Elegí una Imagen">
   				<br>
-  				<label class="error"> <?php echo $errorAvatar ??''; ?>	</label><br>
+  				<label class="error"> <?php echo $errores["Avatar"]??''; ?>	</label><br>
 
 
   				<label>Constraseña</label>

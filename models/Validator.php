@@ -9,6 +9,7 @@ class Validator{
   public function validarLogin($data, BD $base){
     $errores=[];
 
+
     if ($data['Email'] && $data['Password']== "") {
       $errores['Email'] ='Completar todos los campos!';
     } else {
@@ -31,9 +32,9 @@ class Validator{
 
     $errores=[];
 
+
     if($data['NombreCompleto']== ""){
       $errores['NombreCompleto'] ="Bang! Este es un campo requerido";
-    } else {$tempNombreCompleto = $data['NombreCompleto'];
     }
 
     if(ctype_digit( substr($data['NombreCompleto'], 0, 1))){
@@ -43,8 +44,7 @@ class Validator{
     //Verificamos si el Nombre de Usuario es Válido
   	if(empty($data['NombreUsuario'])) {
   		$errores['NombreUsuario'] = 'Boom! Este es un campo requerido';
-  	} else { $tempUserName = $_POST["NombreUsuario"];
-    }
+  	}
 
     //Verificar si existe en la BD
     if($base->traerUsername($data['NombreUsuario']) != NULL) {
@@ -88,19 +88,4 @@ class Validator{
 
     return $errores;
   }
-
-//  public function validarLogin($data, BD $bd){
-
-  //  if(
-
 }
-
-    //Verificamos si el formato de la imagen es el adecuado
-    //var_dump($_FILES);
-    if(isset($_FILES["Avatar"]) && $_FILES["Avatar"]["error"] === 0 ) {
-      $ex = pathinfo($_FILES["Avatar"]["name"], PATHINFO_EXTENSION);
-      if( $ex == "jpg" || $ex == "png" || $ex == "svg"){
-        if (!is_dir('avatars') ) mkdir('avatars');
-        move_uploaded_file($_FILES['Avatar']['tmp_name'], 'avatars/'.$_POST['NombreUsuario'].'.'.$ex);
-      }
-    }
