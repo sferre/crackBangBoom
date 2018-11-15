@@ -1,4 +1,4 @@
-<?php //include('layout/comics.php'); ?>
+<?php include('layout/comics.php'); ?>
 
 <!DOCTYPE html>
 
@@ -26,11 +26,13 @@
 
   //var_dump($seccion);
 
-  // $seccion = $_GET["seccion"];
+  $seccion = $_GET["seccion"];
   // var_dump($seccion);
 
   $id = $_GET["id"];
   //var_dump($id);
+
+  //echo $mangas[$id]['title'];
 
   function section($data) {
 
@@ -38,6 +40,8 @@
 
     $id = $_GET["id"];
     $seccion = $_GET["seccion"];
+
+    //var_dump($id);
 
     switch ($seccion) {
       case 'novedades':
@@ -123,6 +127,8 @@
           </ul>
         </div>
       </div>
+
+      <?php //var_dump($id); ?>
 
     </div>
 </div>
