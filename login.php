@@ -11,8 +11,10 @@ if ($auth->estoyLogueado()) {
 if($_POST){
   $errores = $validator->validarLogin($_POST, $base);
   var_dump($errores);
+
   if (!$errores) {
    $auth->loguear($_POST['Email']);
+   header('Location:user_profile.php');
   }
 }
 
@@ -57,11 +59,11 @@ var_dump($_SESSION);
 					<br>
 
 					<!--Datos del Formulario -->
-					<label>Nombre de Usuario:</label>
+					<label>Email:</label>
 						<br>
 							<input type="text" name="Email" value="<?php echo '' ?>">
 						<br>
-					<label class="error"><?php echo $errores['Email']??""; ?></label>
+					<label class="error"><?php echo $errores['email']??""; ?></label>
 					<br>
 
 
@@ -69,7 +71,7 @@ var_dump($_SESSION);
 						<br>
 					    <input type="password" name="Password" >
 						<br>
-					<label class="error"><?php echo $errorPassword??""; ?></label>
+					<label class="error"><?php echo $errores['pass']??""; ?></label>
 					<br>
 
 					<button type="submit" class:"btn-first">
