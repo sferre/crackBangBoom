@@ -29,8 +29,8 @@
 
   <!-- BOTONES -->
 
-  <a href="#" class="back"><img src="../crackBangBoom/images/icons/arrow.svg" alt="atrás"></a>
-  <a href="#" class="forth"><img src="../crackBangBoom/images/icons/arrow.svg" style="transform: scaleX(-1);" alt="adelante"></a>
+  <a href="#" class="back" onclick="goBack()"><img src="../crackBangBoom/images/icons/arrow.svg" alt="atrás"></a>
+  <a href="#" class="forth" onclick="goForth()"><img src="../crackBangBoom/images/icons/arrow.svg" style="transform: scaleX(-1);" alt="adelante"></a>
 
   <!-- PUNTOS -->
 
@@ -45,9 +45,8 @@
   <!-- PLAY/PAUSA -->
 
   <div class="button">
-    <a href="#">
-      PLAY
-      <!-- <img src="" alt=""> -->
+    <a href="#" onclick="playpause()">
+      PAUSE
     </a>
   </div>
 
@@ -86,6 +85,38 @@
     }
     active = n;
     dot[n].className += " active";
+  }
+
+  function goForth() {
+    selected++;
+    if (selected > 4) {
+      selected = 0;
+    }
+    showImg(selected);
+  }
+
+  function goBack() {
+    selected--;
+    if (selected < 0) {
+      selected = 4;
+    }
+    showImg(selected);
+  }
+
+  var speed = 10000;
+  var play = setInterval("goForth()", speed);
+
+  function playpause() {
+    var btn = document.querySelector(".button");
+    console.log(btn);
+    if (play == null) {
+      btn.innerHTML = '<a href="#" onclick="playpause()">PAUSE</a>';
+      play = setInterval("goForth()", speed);
+    } else {
+      clearInterval(play);
+      play = null;
+      btn.innerHTML = '<a href="#" onclick="playpause()">PLAY</a>';
+    }
   }
 
 </script>
