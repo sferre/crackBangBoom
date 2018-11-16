@@ -10,21 +10,21 @@ class Validator{
 		$errores = [];
 
 		if ($data["Email"] == "") {
-			$errores["email"] = "Campo Email vacio";
+			$errores["email"] = "Completar Email!";
 		}
 		else if (filter_var($data["Email"], FILTER_VALIDATE_EMAIL) == false) {
-			$errores["email"] = "El mail tiene formato invalido";
+			$errores["email"] = "Email con formato invalido";
 		} else if ($base->traerEmail($data["Email"]) == NULL) {
-			$errores["email"] = "El usuario no esta en nuestra base";
+			$errores["email"] = "Usuario no Registado!";
 		}
 
 		$usuario = $base->traerEmail($data["Email"]);
 
 		if ($data["Password"] == "") {
-			$errores["pass"] = "No llenaste la contraseña";
+			$errores["pass"] = "Completar contraseña";
 		} else if ($usuario != NULL) {
 				if (password_verify($data["Password"], $usuario->pass_usuario) == false) {
-				$errores["pass"] = "La contraseña no verifica";
+				$errores["pass"] = "La contraseña no es correcta!";
 			}
 		}
 		return $errores;
