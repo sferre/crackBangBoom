@@ -32,6 +32,8 @@ if($_POST) {
 		$usuario = new User ($_POST['NombreCompleto'],$_POST['NombreUsuario'], $_POST['Email'],$_POST['PaisNacimiento'],$_POST['Password'],$_POST['Avatar']);
 
 		$usuario = $base->guardarUsuario($usuario);
+		$auth->loguear($_POST['Email']);
+		header('Location:index.php');
 
 	}
 

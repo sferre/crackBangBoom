@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php require("autoload.php"); ?>
 <html lang="en" dir="ltr">
 
   <head>
