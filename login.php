@@ -14,6 +14,7 @@ if($_POST){
 
   if (!$errores) {
    $auth->loguear($_POST['Email']);
+   header('Location:user_profile.php');
   }
 }
 
