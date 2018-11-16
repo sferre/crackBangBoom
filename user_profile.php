@@ -11,7 +11,7 @@ $usuarioLogueado = $auth->usuarioLogueado($base);
 $userName = $usuarioLogueado->nombre_completo;
 // var_dump($userName);
 $userEmail = $usuarioLogueado->email_usuario;
-var_dump($userEmail);
+// var_dump($userEmail);
  ?>
 
 <!DOCTYPE html>

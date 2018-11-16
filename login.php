@@ -9,7 +9,7 @@ if ($auth->estoyLogueado()) {
 
 if($_POST){
   $errores = $validator->validarLogin($_POST, $base);
-  var_dump($errores);
+  // var_dump($errores);
 
   if (!$errores) {
    $auth->loguear($_POST['Email']);
@@ -18,7 +18,7 @@ if($_POST){
 }
 
 
-var_dump($_SESSION);
+// var_dump($_SESSION);
 
 
 ?>
