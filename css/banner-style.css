@@ -52,7 +52,7 @@
   text-decoration: none;
   color: white;
   top: 50%;
-  right:90%;
+  right:92%;
   transform: translateY(-50%);
   opacity: 0.7;
 }
@@ -62,13 +62,22 @@
 }
 
 .forth{
-  left:90%;
+  left:92%;
+}
+
+.forth img {
+  width: 40px;
+}
+
+.back img {
+  width: 40px;
 }
 
 .button {
   position: absolute;
   top: 92%;
   left: 95%;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0 3px #000;
 }
 
 .dots {
@@ -81,6 +90,10 @@
 .dot {
   cursor: pointer;
   opacity: 0.7;
+}
+
+.dot img{
+  width: 15px;
 }
 
 .dot:hover {
@@ -100,6 +113,7 @@
 
 .active {
   opacity: 0.9;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 

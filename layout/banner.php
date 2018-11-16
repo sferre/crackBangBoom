@@ -3,23 +3,28 @@
   <!-- IMAGES -->
 
   <div class="image">
-    <img src="../crackBangBoom/images/banner/1.jpg" alt="">
+    <img src="../crackBangBoom/images/banner2/1.jpg" alt="">
     <div class="text">Texto N°1</div>
   </div>
 
   <div class="image">
-    <img src="../crackBangBoom/images/banner/2.jpg" alt="">
+    <img src="../crackBangBoom/images/banner2/2.jpg" alt="">
     <div class="text">Texto N°2</div>
   </div>
 
   <div class="image">
-    <img src="../crackBangBoom/images/banner/3.jpg" alt="">
+    <img src="../crackBangBoom/images/banner2/3.jpg" alt="">
     <div class="text">Texto N°3</div>
   </div>
 
   <div class="image">
-    <img src="../crackBangBoom/images/banner/4.jpg" alt="">
+    <img src="../crackBangBoom/images/banner2/4.jpg" alt="">
     <div class="text">Texto N°4</div>
+  </div>
+
+  <div class="image">
+    <img src="../crackBangBoom/images/banner2/5.jpg" alt="">
+    <div class="text">Texto N°5</div>
   </div>
 
   <!-- BOTONES -->
@@ -30,10 +35,11 @@
   <!-- PUNTOS -->
 
   <div class="dots">
-    <span class="dot active" onclick="showImg(0)"><img src="../crackBangBoom/images/icons/dot.svg" alt=""></span>
+    <span class="dot" onclick="showImg(0)"><img src="../crackBangBoom/images/icons/dot.svg" alt=""></span>
     <span class="dot" onclick="showImg(1)"><img src="../crackBangBoom/images/icons/dot.svg" alt=""></span>
     <span class="dot" onclick="showImg(2)"><img src="../crackBangBoom/images/icons/dot.svg" alt=""></span>
     <span class="dot" onclick="showImg(3)"><img src="../crackBangBoom/images/icons/dot.svg" alt=""></span>
+    <span class="dot" onclick="showImg(4)"><img src="../crackBangBoom/images/icons/dot.svg" alt=""></span>
   </div>
 
   <!-- PLAY/PAUSA -->
@@ -52,9 +58,13 @@
   window.onload = function () {
     var firstSelection = document.querySelector(".image");
     firstSelection.className += " selected";
+
+    var firstActive = document.querySelector(".dot");
+    firstActive.className += " active";
   }
 
   var selected = 0;
+  var active = 0;
 
   function showImg(n) {
     var img = document.getElementsByClassName("image");
@@ -66,6 +76,16 @@
     }
     selected = n;
     img[n].className += " selected";
+
+    var dot = document.getElementsByClassName("dot");
+    for (var i = 0; i < dot.length; i++) {
+      if ( dot[i].className.includes("active") ) {
+        dot[i].className = dot[i].className.replace("active","") ;
+        break;
+      }
+    }
+    active = n;
+    dot[n].className += " active";
   }
 
 </script>
