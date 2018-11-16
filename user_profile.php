@@ -1,3 +1,19 @@
+<?php
+require("autoload.php");
+
+if (!$auth->estoyLogueado()) {
+  header('Location:index.php');
+  exit;
+}
+
+$usuarioLogueado = $auth->usuarioLogueado($base);
+// var_dump($usuarioLogueado);
+$userName = $usuarioLogueado->nombre_completo;
+// var_dump($userName);
+$userEmail = $usuarioLogueado->email_usuario;
+var_dump($userEmail);
+ ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -37,14 +53,14 @@
 
             <!--Info Personal del user-->
             <div class="col-12 name-user">
-              <h1>Nombre Apellido</h1>
+              <h1><?php echo $userName ?> !</h1>
             </div>
             <div class="col-12 email-user">
-              <h2>myuser@email.com</h2>
+              <h2><?php echo $userEmail; ?></h2>
             </div>
             <div class="col-12 user-actions">
               <a href="#">Editar Info</a>
-              <a href="#">Sing Out</a>
+              <a href="logout.php">Sign Out</a>
             </div>
 
           </div>

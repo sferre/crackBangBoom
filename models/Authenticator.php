@@ -30,8 +30,8 @@ class Auth {
 
   public function usuarioLogueado($base){
     if($this->estoyLogueado()){
-        $base->traerEmail($_SESSION['logueado']);
-        return $loguado;
+      $logueado = $base->traerEmail($_SESSION['logueado']);
+        return $logueado;
     } else {
       return NULL;
     }

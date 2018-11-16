@@ -12,7 +12,13 @@
   </div>
 
   <div class="bottom-menu col-12">
-    <a href="sobre-nosotros.php">Sobre nosotros</a> | <a href="faq.php">FAQs</a> | <a href="contact.php">Contacto</a> | <a href="logout.php">Logout</a> | <a href="login.php">Ingresar</a>
+    <?php
+    if (!$auth->estoyLogueado()) {
+     ?>
+    <a href="sobre-nosotros.php">Sobre nosotros</a> | <a href="faq.php">FAQs</a> | <a href="contact.php">Contacto</a> | <a href="login.php">Ingresar</a> | <a href="register.php">Registrarme</a>
+  <?php } else { ?>
+    <a href="sobre-nosotros.php">Sobre nosotros</a> | <a href="faq.php">FAQs</a> | <a href="contact.php">Contacto</a> | <a href="logout.php">Logout</a> | <a href="user_profile.php">Mi Perfil</a>
+  <?php } ?>
   </div>
 
   <div class="signature col-12">

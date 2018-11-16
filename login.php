@@ -1,5 +1,4 @@
 <?php
-
 require("autoload.php");
 
 //si estoy logueado me redirige al Index.php
