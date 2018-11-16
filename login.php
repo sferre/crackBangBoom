@@ -11,6 +11,7 @@ if ($auth->estoyLogueado()) {
 if($_POST){
   $errores = $validator->validarLogin($_POST, $base);
   var_dump($errores);
+
   if (!$errores) {
    $auth->loguear($_POST['Email']);
   }
@@ -57,7 +58,7 @@ var_dump($_SESSION);
 					<br>
 
 					<!--Datos del Formulario -->
-					<label>Nombre de Usuario:</label>
+					<label>Email:</label>
 						<br>
 							<input type="text" name="Email" value="<?php echo '' ?>">
 						<br>
