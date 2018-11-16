@@ -22,7 +22,7 @@
       <!--BANNER-->
       <div class="container-fluid ">
         <div class="row banner">
-          <div class="col-12">
+          <div class="col-12 no-padding">
             <?php include('layout/banner.php'); ?>
           </div>
         </div>
