@@ -1,17 +1,17 @@
 <?php
 require("autoload.php");
 
-if (!$auth->estoyLogueado()) {
-  header('Location:index.php');
-  exit;
-}
-
-$usuarioLogueado = $auth->usuarioLogueado($base);
-// var_dump($usuarioLogueado);
-$userName = $usuarioLogueado->nombre_completo;
-// var_dump($userName);
-$userEmail = $usuarioLogueado->email_usuario;
-// var_dump($userEmail);
+// if (!$auth->estoyLogueado()) {
+//   header('Location:index.php');
+//   exit;
+// }
+//
+// $usuarioLogueado = $auth->usuarioLogueado($base);
+// // var_dump($usuarioLogueado);
+// $userName = $usuarioLogueado->nombre_completo;
+// // var_dump($userName);
+// $userEmail = $usuarioLogueado->email_usuario;
+// // var_dump($userEmail);
  ?>
 
 <!DOCTYPE html>

@@ -4,7 +4,7 @@ class BD {
 
   private $dsn = 'mysql:host=localhost;dbname=cbb';
   private $user = 'root';
-  private $pass = 'root';
+  private $pass = '';
   private $opt= [ PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION ];
   private $conex;
 
